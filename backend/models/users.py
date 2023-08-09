@@ -1,4 +1,4 @@
-from database import query
+from database.db import query
 
 def userLogin(email, password):
 

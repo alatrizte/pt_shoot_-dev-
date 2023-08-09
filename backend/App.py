@@ -4,8 +4,8 @@ import os
 import time
 import hashlib
 
-from backend.services.create_xml import create_xml
-from backend.models.users import userLogin
+from services.create_xml import create_xml
+from models.users import userLogin
 
 app = Flask(__name__)
 
