@@ -6,6 +6,10 @@ from create_xml import create_xml
 
 app = Flask(__name__)
 
+@app.route("/login", methods=['POST'])
+def login():
+    if request.method == 'POST':
+        pass
 
 @app.route("/upload", methods=['POST'])
 def uploader():
@@ -35,11 +39,11 @@ def uploader():
         while not os.path.exists(fileHTML):
             time.sleep(1)
         
-        print("El archivo se ha creado.")
         create_xml(ciProject, nombre_archivo)
+        print("El archivo " + nombre_archivo + ".xml se ha creado.")
         
         # Retornamos una respuesta satisfactoria
-        return "<h1>Archivo subido exitosamente</h1>"
+        return {'upload': 'ok'}
 
 if __name__ == "__main__":
     # Iniciamos la aplicación

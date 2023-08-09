@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import os
 import re
 
 # Función para convertir los archivos html a un archivo con etiquetas xml.
@@ -188,10 +187,3 @@ def create_xml(ciProject, fileName):
     fileXML.write('</part>\n')
     fileXML.write('</capitulo>\n')
     fileXML.close()
-
-   
-
-""" ciProject = 'ad12jdk3'
-fileName = 'SdT_g001_def_con_separatas'
-
-create_xml(ciProject, fileName) """
