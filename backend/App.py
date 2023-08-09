@@ -1,15 +1,27 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 import os
 import time
+import hashlib
+
 from create_xml import create_xml
+from users import userLogin
 
 app = Flask(__name__)
 
 @app.route("/login", methods=['POST'])
 def login():
     if request.method == 'POST':
-        pass
+        email = request.form['email']
+        password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
+
+        consulta = userLogin(email, password)
+        if consulta == "no data":
+            return jsonify ( data=consulta)
+        else:
+            return jsonify( id=consulta[0],
+                            username=consulta[1],
+                            )
 
 @app.route("/upload", methods=['POST'])
 def uploader():

@@ -1,4 +1,12 @@
 from database import query
 
 def userLogin(email, password):
-    return
+
+    print(email, password)
+    sql = "SELECT * FROM users WHERE user_mail='" + email + "' AND user_pass='" + password + "'"
+    conn = query(sql)
+
+    if len(conn) > 0:
+        return conn[0]
+    else: 
+        return "no data"
