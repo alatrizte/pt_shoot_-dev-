@@ -6,6 +6,7 @@ import hashlib
 
 from services.create_xml import create_xml
 from models.users import userLogin
+from services.user_tokens import User_tokens
 
 app = Flask(__name__)
 
@@ -19,10 +20,10 @@ def login():
         if consulta == "no data":
             return jsonify ( message=consulta, success=False)
         else:
-            return jsonify( id=consulta[0],
-                            username=consulta[1],
-                            message='success',
-                            success=True
+            encoded_token = User_tokens.generate_token(consulta)
+            return jsonify( message='success',
+                            success=True,
+                            token=encoded_token
                             )
 
 @app.route("/upload", methods=['POST'])
