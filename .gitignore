@@ -1,5 +1,5 @@
 venv/
 .vscode/
 __pycache__/
-prueba.py
+backend/tests
 backend/.env

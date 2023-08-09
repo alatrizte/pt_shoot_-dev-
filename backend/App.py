@@ -4,8 +4,8 @@ import os
 import time
 import hashlib
 
-from create_xml import create_xml
-from users import userLogin
+from backend.services.create_xml import create_xml
+from backend.models.users import userLogin
 
 app = Flask(__name__)
 
@@ -17,10 +17,12 @@ def login():
 
         consulta = userLogin(email, password)
         if consulta == "no data":
-            return jsonify ( data=consulta)
+            return jsonify ( message=consulta, success=False)
         else:
             return jsonify( id=consulta[0],
                             username=consulta[1],
+                            message='success',
+                            success=True
                             )
 
 @app.route("/upload", methods=['POST'])
