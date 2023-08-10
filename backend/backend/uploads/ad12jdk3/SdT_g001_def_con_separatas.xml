@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<capitulo>
+<titulo>Saudade de ti</titulo>
+<episodio>EPISODIO 001</episodio>
+<creditos>DIÁLOGOS</creditos>
+<creditos>Sergio Campo </creditos>
+<creditos>ARGUMENTO</creditos>
+<creditos>Sergio Campo, Jacobo Paz</creditos>
+<creditos>EDICIÓN DE GUIÓN</creditos>
+<creditos>Sergio Campo, Jacobo Paz</creditos>
+<creditos>VOZ AUDIOVISUAL</creditos>
+<creditos>Versión de traballo</creditos>
+<creditos>(29-03-2022)</creditos>
+<part id = '00'>
+<sec><cap>01</cap><num>00</num><loc>RECURSOS FESTAS DO CARME.</loc><ub></ub><amb></amb></sec>
+<acot size = '151'>Recursos das festas do Carme na vila na que vaiamos gravar. Como por datas non imos chegar a tempo haberá que conseguir imaxes de arquivo pre-pandemia.</acot>
+</part>
+<part id = '01'>
+<sec><cap>01</cap><num>01</num><loc>ESTRADA PRÓXIMA Á FESTA.</loc><ub>EXT</ub><amb>ANOITECER</amb></sec>
+<perx>UXÍA, LUCHO</perx>
+<acot size = '65'>UXÍA (30) e LUCHO(40), felices e namorados van cara á furgoneta. </acot>
+<dlg size = '28'><per>LUCHO</per>Te-las chaves da furgoneta?</dlg>
+<acot size = '32'>Uxía saca as chaves do vehículo.</acot>
+<dlg size = '56'><per>UXÍA</per>Si, pero hoxe conduzo eu que ti xa levas dúas cervexas.</dlg>
+<dlg size = '69'><per>LUCHO</per>Dúas cervexas en toda a tarde fronte a toda unha vida sen conducir.</dlg>
+<dlg size = '28'><per>UXÍA</per>Eu véxoo bastante igualado.</dlg>
+<dlg size = '50'><per>LUCHO</per>Uxía, que só aprobáche-lo teórico, e polos pelos!</dlg>
+<dlg size = '92'><per>UXÍA</per>E que mellor día pra estrearme que hoxe? Está todo o mundo na festa e as estradas baleiras.</dlg>
+<acot size = '19'>Lucho ponse serio. </acot>
+<dlg size = '47'><per>LUCHO</per>Dáme as chaves e deixa de face-lo parvo, Uxía.</dlg>
+<dlg size = '72'><per>UXÍA</per>Uiuiuiu, dándolle ordes á túa futura muller? A ver se cancelo a voda...</dlg>
+<dlg size = '73'><per>LUCHO</per>(Chanceando) Co que che custou convencerme, non creo que o fagas!</dlg>
+<dlg size = '33'><per>UXÍA</per>Pois eu non o teño tan claro...</dlg>
+<acot size = '30'>Uxía bota a correr, divertida.</acot>
+<dlg size = '14'><per>UXÍA</per>Noiva á fuga!</dlg>
+<acot size = '142'>Uxía sobe ao vehículo, unha pequena furgoneta co rótulo do Bar Casa Eiroa, pecha os seguros e baixa o portelo. Lucho vai camiñando cara a alí.</acot>
+<dlg size = '48'><per>LUCHO</per>Uxía, por favor, abre e déixame conducir a min.</dlg>
+<acot size = '51'>Uxía arrinca o motor. O vehículo móvese moi amodo. </acot>
+<dlg size = '49'><per>LUCHO</per>Para, anda, para antes de que montes unha boa...</dlg>
+<dlg size = '92'><per>UXÍA</per>No bo e no malo, na saúde e na enfermidade… tódolos días da túa vida. Iso inclúe hoxe, non?</dlg>
+<acot size = '23'>Lucho dáse por vencido.</acot>
+<dlg size = '26'><per>LUCHO</per>Está ben, ti gañas. Para.</dlg>
+<acot size = '43'>Uxía para. Lucho vai subir pero ela deteno.</acot>
+<dlg size = '33'><per>UXÍA</per>Chsss, chsss, chsss. Quieto aí.</dlg>
+<dlg size = '16'><per>LUCHO</per>Que pasa agora?</dlg>
+<dlg size = '34'><per>UXÍA</per>Lucho, queres se-lo meu copiloto?</dlg>
+<acot size = '20'>Lucho ri, resignado.</acot>
+<dlg size = '11'><per>LUCHO</per>Si, quero.</dlg>
+<acot size = '61'>Lucho dálle a volta á furgoneta e sobe no asento do copiloto.</acot>
+</part>
+<part id = '02A'>
+<sec><cap>01</cap><num>02A</num><loc>ESTRADA.</loc><ub>EXT</ub><amb>NOITE</amb></sec>
+<acot size = '29'>A furgoneta vai pola estrada.</acot>
+</part>
+<part id = '03A'>
+<sec><cap>01</cap><num>03A</num><loc>ESTRADA. FURGONETA.</loc><ub>EXT/INT NAT</ub><amb>NOITE</amb></sec>
+<perx>LUCHO, UXÍA</perx>
+<acot size = '138'>Uxía conduce con tranquilidade, coma quen vai facendo unha falcatruada e a un tempo moi concentrada. Lucho parece que conseguiu relaxarse.</acot>
+<dlg size = '19'><per>UXÍA</per>Xa máis tranquilo?</dlg>
+<dlg size = '8'><per>LUCHO</per>Algo...</dlg>
+<dlg size = '90'><per>UXÍA</per>(Divertida) Ben. Así pódoche dicir que collín a furgo sen o permiso de meus pais.</dlg>
+<acot size = '27'>Lucho volve poñerse tenso. </acot>
+<dlg size = '111'><per>LUCHO</per>Nin unha raia ou a túa nai mátame. Desta mátame. (Preocupado) Amor, céntrate no carril, fai o favor...</dlg>
+</part>
+<part id = '02B'>
+<sec><cap>01</cap><num>02B</num><loc>ESTRADA.</loc><ub>EXT</ub><amb>NOITE</amb></sec>
+<acot size = '84'>A furgoneta segue o seu camiño. De fronte vén un coche moi rápido e facendo zig-zag.</acot>
+</part>
+<part id = '03B'>
+<sec><cap>01</cap><num>03B</num><loc>ESTRADA. FURGONETA.</loc><ub>EXT/INT NAT</ub><amb>NOITE</amb></sec>
+<perx>LUCHO, UXÍA</perx>
+<acot size = '70'>Uxía ve o coche que vén de fronte a moita velocidade e ponse nerviosa.</acot>
+<dlg size = '13'><per>UXÍA</per>Ese que fai?</dlg>
+<acot size = '36'>Lucho trata de manter o sangue frío.</acot>
+<dlg size = '54'><per>LUCHO</per>Uxía, tranquila, con calma, bótate a un lado e para!</dlg>
+<dlg size = '87'><per>UXÍA</per>(Moi nerviosa) Hai moi pouco sitio... A que lado queres que pare? Lucho, eu...</dlg>
+<acot size = '161'>Uxía, moi nerviosa, vai frear pero sen querer acelera. Lucho agarra o volante desde o seu asento e intenta un movemento. Demasiado tarde: luz potente duns faros.</acot>
+<dlg size = '12'><per>UXÍA</per>...quérote!</dlg>
+<acot size = '16'>FUNDIDO A BRANCO</acot>
+</part>
+<part id = '04'>
+<sec><cap>01</cap><num>04</num><loc>HOSPITAL. URXENCIAS.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>TERESA, DIMAS, ELBA, LUCHO, RAÚL, MÓNICA, ADELA, DOUTOR, CELADOR</perx>
+<acot size = '82'>Chega TERESA (55) seguida de DIMAS (60) e ELBA (25), van directos onda un DOUTOR. </acot>
+<dlg size = '76'><per>TERESA</per>Que pasou, doutor? A miña filla está ben? Dígame que a miña filla está ben.</dlg>
+<dlg size = '236'><per>DOUTOR</per>A colisión foi moi forte. O coche deu varias voltas de campá ata que chocou contra unha árbore. Cando chegaron as ambulancias, a súa filla xa perdera moito sangue. Non puidemos facer nada por ela... Morreu no camiño ó hospital. Síntoo.</dlg>
+<acot size = '106'>Dimas, Elba e Teresa rompen a chorar. Teresa cae sobre os seus xeonllos. Elba abrázase con seu pai, Dimas.</acot>
+<dlg size = '128'><per>TERESA</per>Uxía, a nosa Uxía... Non pode ser! Ten que haber un erro. Uxía non pode estar morta... A miña nena, non é máis ca unha nena...</dlg>
+<dlg size = '83'><per>DIMAS</per>(Agarrando a Elba contra o seu peito) Chora, miña filla, chora, enfádate, berra...</dlg>
+<acot size = '53'>Elba pega un berro afogado contra o peito de seu pai.</acot>
+<acot size = '232'>Nese momento aparece Lucho, co brazo  vendado e feridas na cara. Vén acompañado por un Celador. Lucho está claramente desorientado; atónito, baleiro, coa mirada perdida... Ao ver a Teresa, instintivamente, dá dous pasos para atrás. </acot>
+<acot size = '65'>Teresa fíxase nel e a súa cara pasa da dor ao odio máis profundo:</acot>
+<dlg size = '136'><per>TERESA</per>Ti! Ti! Ti e-lo culpable de todo! Quitáchesme a miña filla! Matáchela! Mataches a Uxía! Que che fixemos? Por que nos fas isto? Asasino!</dlg>
+<acot size = '100'>Teresa bótase sobre Lucho que, inane, non se defende e deixa que Teresa o golpee. Parece un boneco. </acot>
+<acot size = '99'>Dimas consegue separar a Teresa de Lucho. Teresa deixa caer o peso do seu corpo sobre el. Exhausta.</acot>
+<dlg size = '36'><per>TERESA</per>Lucho matou a nosa nena. Matouna...</dlg>
+<acot size = '113'>Dimas e Elba abrázanse con Teresa. Por detrás deles pasan RAÚL (40) e MÓNICA (40), que van falar co mesmo doutor.</acot>
+<dlg size = '37'><per>RAÚL</per>Doutor, como está meu pai? Está ben?</dlg>
+<dlg size = '169'><per>DOUTOR</per>O impacto foi moi forte e o seu pai quedou aprisionado polo vehículo. Ten lesións en todo o corpo e a pelve fracturada, pero conseguimos estabilizalo. Tivo moita sorte.</dlg>
+<dlg size = '31'><per>RAÚL</per>Está estable? Vaise recuperar?</dlg>
+<acot size = '82'>O doutor asente. Mónica e Raúl alégranse, pero a cara do doutor segue sendo tensa.</acot>
+<dlg size = '18'><per>MÓNICA</per>Que pasa, doutor?</dlg>
+<dlg size = '79'><per>DOUTOR</per>A muller que viaxaba con el levou a peor parte do choque.... Faleceu no acto.</dlg>
+<acot size = '19'>Raúl queda atónito.</acot>
+<dlg size = '46'><per>MÓNICA</per>Muller, que muller? A miña sogra ía no coche?</dlg>
+<acot size = '21'>Raúl non o pode crer.</acot>
+<dlg size = '99'><per>RAÚL</per>Mamá? Pero se falei con ela esta mesma tarde. Está seguro, doutor? Non é posible... Non é posible.</dlg>
+<dlg size = '8'><per>DOUTOR</per>Síntoo.</dlg>
+<acot size = '150'>Mónica consola a Raúl, que está abatido pero enteiro. Aínda non dá crido a noticia. Nese momento entra ADELA (65). Raúl ve a Adela e corre cara a ela.</acot>
+<dlg size = '17'><per>RAÚL</per>Mamá, estás ben?</dlg>
+<dlg size = '41'><per>ADELA</per>Si, claro. Que pasou? Como está teu pai?</dlg>
+<dlg size = '41'><per>RAÚL</per>Pero, non sabes nada? Ti non ías con el?</dlg>
+<acot size = '11'>Adela nega.</acot>
+<dlg size = '35'><per>RAÚL</per>Entón, con quen ía papá no coche?</dlg>
+</part>
+<part id = '05'>
+<sec><cap>01</cap><num>05</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>ISIDRO</perx>
+<acot size = '138'>Soa o teléfono fixo do salón. Acéndese a luz. Entra ISIDRO (60) medio durmido e en pixama. Descolga o teléfono. Escoita atento a chamada. </acot>
+<acot size = '56'>Pasados uns segundos, Isidro comeza a chorar. Afundido. </acot>
+<acot size = '116'>Xunto ao teléfono ou nalgún lugar visible da estancia hai unha foto familiar na que están Isidro, Olga, Celia e Noa.</acot>
+</part>
+<part>
+<sec>CABECEIRA</sec>
+</part>
+<part id = '06'>
+<sec><cap>01</cap><num>06</num><loc>ESTRADA.</loc><ub>EXT</ub><amb>DÍA</amb></sec>
+<acot size = '30'>Un taxi circula pola estrada. </acot>
+<acot size = '32'>Sobreimpreso: 2 semanas despois.</acot>
+</part>
+<part id = '07A'>
+<sec><cap>01</cap><num>07A</num><loc>LUGAR DO ACCIDENTE.</loc><ub>EXT</ub><amb>DÍA</amb></sec>
+<perx>NOA, CELIA</perx>
+<acot size = '138'>O taxi detense no lugar do accidente. Hai varios ramos de flores, entre eles un de flores amarelas. Do taxi baixan CELIA (40) e NOA (17). </acot>
+<dlg size = '41'><per>CELIA</per>(Ao taxista) Vai ser un momento.</dlg>
+<acot size = '422'>Noa leva un pequeno ramo de crisantemos brancos. Celia quita algunha flor en mal estado e detense un momento mirando as fotos de Uxía e de Olga (65, a outra muller falecida no accidente) que hai postas por alí (pegadas na árbore, na barreira de seguridade ou onde a localización na que finalmente sexa o accidente o permita). Noa acariña levemente a súa nai, visiblemente emocionada, que non deixa de mirar a foto de Olga.</acot>
+<acot size = '24'>Sobre a imaxe de Olga...</acot>
+</part>
+<part id = '08'>
+<sec><cap>01</cap><num>08</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>DÍA (FLASHBACK)</amb></sec>
+<perx>NOA, CELIA, ISIDRO, OLGA, (NOA OFF)</perx>
+<acot size = '231'>Estancia ben iluminada. Todos visten roupa estival. De fondo, Noa e Isidro terminan a maqueta dun barco. En primeiro termo, OLGA (65) estalle metendo unha chea de cousas a Celia nunha bolsa: chourizos, patacas, algunha friameira...</acot>
+<dlg size = '101'><per>CELIA</per>Mamá, xa chega, que en Bilbao tamén hai supermercados... E ademais temos que levar todo isto no bus.</dlg>
+<acot size = '35'>Olga segue metendo cousas na bolsa.</acot>
+<dlg size = '126'><per>OLGA</per>Ti dira-lo que queiras, pero as patacas, nada que ver coas de aquí. E non me vas compara-los nosos chourizos coa txistorra...</dlg>
+<dlg size = '83'><per>CELIA</per>(Resignada) Grazas, mamá, e grazas por estas vacacións. Viñéronnos moi ben.</dlg>
+<dlg size = '268'><per>OLGA</per>Celia, non sei que se che perdeu en Bilbao. Se aínda tiveses marido ou mozo, ou polo menos un amiguiño con dereitos, xa me entendes... Se fose así, eu calada estaba máis guapa, pero ir pra alá só polo traballo... A vida pasa moi rápido pra perdela traballando, filla.</dlg>
+<dlg size = '35'><per>CELIA</per>Supoño que mo dis por experiencia.</dlg>
+<dlg size = '62'><per>OLGA</per>Por iso mesmo cho digo, si. Pra que non che pase coma a min.</dlg>
+<acot size = '35'>Celia achégase a súa nai, cariñosa.</acot>
+<dlg size = '51'><per>CELIA</per>Oxalá algún día chegue a ser tan feliz como es ti.</dlg>
+<dlg size = '28'><per>OLGA</per>Sabes cal é o meu segredo?</dlg>
+<dlg size = '13'><per>CELIA</per>Sorpréndeme.</dlg>
+<dlg size = '28'><per>OLGA</per>Que vivo aquí, en Abrente.</dlg>
+<dlg size = '83'><per>CELIA</per>Ai, mamá! Hai case vinte anos que marchei. Cando me vas deixar de pedir que volva?</dlg>
+<dlg size = '47'><per>OLGA</per>Cando lle fagas caso a túa nai e quedes aquí.</dlg>
+<acot size = '115'>Olga e Celia sorrín con complicidade. De fondo, Noa celebra terminar a maqueta. Isidro examina a maqueta de vagar. </acot>
+<dlg size = '49'><per>ISIDRO</per>Está perfecta. Preparada pra cruza-lo Atlántico.</dlg>
+<dlg size = '33'><per>NOA</per>E só nos levou tooooodo o verán!</dlg>
+<acot size = '106'>Celia e Olga míranse e rin. Noa saca o móbil e faille unha foto a seu avó, que posa orgulloso coa maqueta.</acot>
+<dlg size = '74'><per>CELIA</per>(A Olga) En canto poida coller uns días facémosvos outra visita.</dlg>
+<dlg size = '29'><per>OLGA</per>A ver se é antes do Nadal...</dlg>
+<dlg size = '19'><per>CELIA</per>Prométocho, mamá.</dlg>
+<acot size = '11'>Olga sorrí.</acot>
+<dlg size = '21'><per>NOA</per>(OFF)  Mamá, mamá...</dlg>
+</part>
+<part id = '07B'>
+<sec><cap>01</cap><num>07B</num><loc>LUGAR DO ACCIDENTE.</loc><ub>EXT</ub><amb>DÍA</amb></sec>
+<perx>NOA, CELIA, SANTI</perx>
+<dlg size = '17'><per>NOA</per>Mamá, estás ben?</dlg>
+<dlg size = '45'><per>CELIA</per>Ola, perdoa, pódese saber que estás facendo?</dlg>
+<acot size = '157'>Santi levántase coas flores amarelas. A súa actitude é tranquila e un chisco condescendente de máis. Sorrille a Celia, moi confiado no seu encanto natural...</acot>
+<dlg size = '33'><per>SANTI</per>Puxéchelas ti? Desculpa... Toma.</dlg>
+<acot size = '47'>Santi sorrí e dálle as flores amarelas a Celia.</acot>
+<dlg size = '192'><per>SANTI</per>Eu son... era moi amigo da doutora Otero, unha muller estupenda e moi querida. Por iso hai tantas flores. Pero só os que a coñeciamos ben sabiamos que detestaba as flores amarelas, por iso...</dlg>
+<acot size = '29'>Celia, molesta, interrómpeo. </acot>
+<dlg size = '288'><per>CELIA</per>Para un momento. Eu son a súa filla e non me ten que dicir ninguén o que lle gustaba a miña nai e o que non... Ademais, iso non che dá dereito ningún a deixala sen flores. Se de verdade a coñecías, terías que traerlle un ramo de crisantemos brancos. Coma o noso. Eran os seus favoritos.</dlg>
+<acot size = '165'>Santi, que se achegou ao seu coche mentres falaba Celia, saca do maleteiro un enorme ramo de crisantemos brancos. É tres veces máis grande que o ramo que sostén Noa.</acot>
+<dlg size = '94'><per>SANTI</per>Prométoche que estaba quitando as flores con boa intención. Deixo os crisantemos e marcho...</dlg>
+<acot size = '68'>Santi anícase para deixar os crisantemos. Fala segundo se  levanta. </acot>
+<dlg size = '23'><per>SANTI</per>Ti es Celia, non si?</dlg>
+<acot size = '56'>Celia asente. Ambos os dous quedan mirándose un momento.</acot>
+<dlg size = '77'><per>SANTI</per>Encantado. De verdade que admiraba moito a túa nai. Sinto moito a súa perda.</dlg>
+<acot size = '91'>Santi deixa os crisantemos, e vai cara ao coche. Celia segue suxeitando as flores amarelas.</acot>
+<dlg size = '30'><per>CELIA</per>E que fago con estas flores?</dlg>
+<dlg size = '57'><per>SANTI</per>Pódelas poñer en auga. Van moi ben coa túa cor de ollos!</dlg>
+<acot size = '155'>Santi sobe ao coche e vaise. Celia queda ensimesmada mirando cara a el. Non está claro se lle gusta ou non Santi, pero desde logo non a deixou indiferente.</acot>
+<dlg size = '20'><per>NOA</per>Mamá, quen era ese?</dlg>
+<dlg size = '60'><per>CELIA</per>Un chulo. Veña, Noa, deixámo-las flores e imos onda o avó.</dlg>
+</part>
+<part id = '09'>
+<sec><cap>01</cap><num>09</num><loc>ENTRADA DE ABRENTE.</loc><ub>EXT</ub><amb>DÍA</amb></sec>
+<acot size = '77'>O taxi pasa xunto o cartel de Abrente. Recursos dunha vila costeira e bonita.</acot>
+</part>
+<part id = '10A'>
+<sec><cap>01</cap><num>10A</num><loc>CASA EIROA. PRIVADO.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>TERESA, ELBA</perx>
+<acot size = '107'>Teresa suxeita un polo (bordado co logo do Bar Casa Eiroa) e un mandil. Óleo con agarimo mentres Elba fala.</acot>
+<dlg size = '108'><per>ELBA</per>Mamá, non vos podo axudar dalgunha outra maneira? Limpando a casa, gastando menos, cociñando... O que sexa.</dlg>
+<dlg size = '47'><per>TERESA</per>Elba, tan malo é traballar con túa nai no bar?</dlg>
+<dlg size = '82'><per>ELBA</per>(Desculpándose) Mamá, sabes que me encanta estar contigo, pero o bar e mais eu...</dlg>
+<dlg size = '113'><per>TERESA</per>(Comprensiva) Filla, sen a túa irmá e co teu tío Isidro estando como está... ti e mais eu debemos ser fortes...</dlg>
+<dlg size = '96'><per>ELBA</per>O de camareira non é o meu, mamá. Xa o sabes. Uxía, si. Ela era divertida, faladora. Pero eu...</dlg>
+<dlg size = '221'><per>TERESA</per>Ti es estupenda, Elba. E ademais, estar xuntas vainos vir ben ás dúas. Nunca volo contei pero... ¿Sabes, filla? Sempre soñei con que algún día iamos traballa-las tres xuntas no bar... (Suspira) Aínda que iso xa...</dlg>
+<acot size = '64'>Teresa queda mirando o polo. Elba achégase a consolar a súa nai.</acot>
+<dlg size = '23'><per>ELBA</per>E que tería que facer?</dlg>
+<acot size = '20'>Teresa volve en si. </acot>
+<dlg size = '62'><per>TERESA</per>Atende-los clientes, servi-las mesas... O que facía túa irmá.</dlg>
+<dlg size = '15'><per>ELBA</per>Vasme ensinar?</dlg>
+<acot size = '48'>Teresa recupera o ánimo e sorrille á súa filla. </acot>
+<dlg size = '23'><per>TERESA</per>Claro. Toma, pon isto.</dlg>
+<acot size = '51'>Teresa dálle o polo que estaba a suxeitar nas mans.</acot>
+<dlg size = '58'><per>ELBA</per>O polo de Uxía? É necesario? Ademais, vaime quedar mal...</dlg>
+<acot size = '31'>Teresa cóllelle o polo a Elba. </acot>
+<dlg size = '71'><per>TERESA</per>Tes razón, perdoa. Hoxe mesmo encargo un par de polos do teu talle...</dlg>
+<dlg size = '113'><per>ELBA</per>Non encargues nada, mamá. Isto é temporal. Ata que o tío Isidro se recupere ou ata que as contas vaian mellor...</dlg>
+<dlg size = '105'><per>TERESA</per>De acordo, filla. Grazas. (Dándolle o mandil) Imos traballar, que o bar xa tiña que estar aberto.</dlg>
+<acot size = '102'>Elba colle o mandil e sae do cuarto. Teresa queda soa. Mira o polo, apesarada, e leva a man aos ollos.</acot>
+<acot size = '15'>FUNDIDO A NEGRO</acot>
+</part>
+<part id = '11'>
+<sec><cap>01</cap><num>11</num><loc>CASA EIROA. PRIVADO.</loc><ub>INT</ub><amb>DÍA  (FLASHBACK)</amb></sec>
+<perx>UXÍA, DIMAS, TERESA, ELBA, LUCHO</perx>
+<acot size = '214'>Lucho estalle a tapar os ollos a Uxía. Xunto a eles está Dimas. Elba sostén unha torta de aniversario mentres Teresa acende as candeas. Lucho destapa os ollos de Uxía e todos comezan a cantarlle “Parabéns para ti”.</acot>
+<dlg size = '80'><per>TODOS</per>Parabéns para ti, nesta data querida, moitas felicidades, moitos anos de vida!</dlg>
+<acot size = '98'>Uxía sopra as candeas da torta de aniversario e acto seguido dálle un bico a Lucho. Todos sorrín. </acot>
+<dlg size = '26'><per>TERESA</per>Nena, pediches un desexo?</dlg>
+<dlg size = '55'><per>UXÍA</per>Claro, pero non o podo dicir que senón non se cumpre.</dlg>
+<dlg size = '16'><per>TERESA</per>Nin unha pista?</dlg>
+<acot size = '10'>Uxía nega.</acot>
+<dlg size = '41'><per>TERESA</per>(Queixándose) Antes contabádesmo todo...</dlg>
+<dlg size = '28'><per>ELBA</per>Si, antes hai vinte anos...</dlg>
+<acot size = '11'>Todos rin. </acot>
+<dlg size = '83'><per>DIMAS</per>Eu, con que o ano que vén o poidamos volver celebrar todos xuntos, xa me conformo.</dlg>
+<dlg size = '84'><per>UXÍA</per>A min váleme con algo parecido, pero estando nunha praia de Bali ou de Punta Cana.</dlg>
+<acot size = '23'>Uxía comeza a imaxinar.</acot>
+<dlg size = '96'><per>UXÍA</per>Tirada nunha hamaca, cun mojito nunha man, unha caipirinha na outra e un maromo abanicándome...</dlg>
+<dlg size = '39'><per>LUCHO</per>E aí... onde entramos nós exactamente?</dlg>
+<dlg size = '49'><per>UXÍA</per>Por iso dixen que era algo parecido e non igual!</dlg>
+<acot size = '11'>Todos rin. </acot>
+<dlg size = '72'><per>UXÍA</per>Agora en serio, pra o meu próximo aniversario non quero máis que isto.</dlg>
+<acot size = '33'>Estampa fermosa da familia Eiroa.</acot>
+</part>
+<part id = '10B'>
+<sec><cap>01</cap><num>10B</num><loc>CASA EIROA. PRIVADO.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>TERESA, (ELBA OFF)</perx>
+<acot size = '376'>O sorriso de Teresa no flashback contrasta coa súa tristura actual. Teresa, amodo, con moito cariño, dobra o polo da súa filla. Abre un armario con agarimo e gárdao con delicadeza. Todo, aguantando as bágoas. Pero cando vai pechar a porta xa non pode máis. Estoupa. Chea de rabia golpea varias veces a porta do armario. Chora. Ata que chega a voz de Elba desde o restaurante. </acot>
+<dlg size = '43'><per>ELBA</per>(OFF) Mamá, ven! Como se fai un carajillo?</dlg>
+<acot size = '81'>Teresa respira fondo, recomponse e sae da estancia aparentando certa normalidade.</acot>
+</part>
+<part id = '12A'>
+<sec><cap>01</cap><num>12A</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>CELIA, NOA, ISIDRO</perx>
+<acot size = '132'>Celia e Noa acaban de chegar á casa de Isidro. Aínda teñen as maletas con elas. A vivenda está desordenada, os pratos sen limpar... </acot>
+<dlg size = '35'><per>ISIDRO</per>(Canso) E canto tempo ides quedar?</dlg>
+<dlg size = '122'><per>CELIA</per>Acabamos de chegar e xa queres saber cando marchamos? Imos estar ata o venres, papá, que o sábado teño garda en Basurto.</dlg>
+<dlg size = '22'><per>ISIDRO</per>Menos dunha semana...</dlg>
+<dlg size = '36'><per>CELIA</per>Aínda temos moitos días por diante.</dlg>
+<acot size = '55'>Celia dálle a Noa unha bolsa grande cunha caixa dentro.</acot>
+<dlg size = '33'><per>CELIA</per>Papá, Noa tróuxoche un agasallo.</dlg>
+<acot size = '28'>Noa dálle a bolsa a seu avó.</acot>
+<dlg size = '52'><per>NOA</per>(Desculpándose de antemán) Elixiuno mamá...</dlg>
+<acot size = '78'>O avó saca a caixa. É a maqueta dun barco. Isidro vea e déixaa enriba da mesa.</acot>
+<dlg size = '46'><per>CELIA</per>É outra maqueta, pra que a montedes xuntos...</dlg>
+<dlg size = '99'><per>ISIDRO</per>As maquetas prefabricadas non valen nada, haina que facer desde cero. Elixindo unha boa madeira...</dlg>
+<dlg size = '41'><per>NOA</per>Xa llo dixen eu, pero ela coma sempre...</dlg>
+<dlg size = '50'><per>ISIDRO</per>...fixo o que lle petou. Que me vas contar a min!</dlg>
+<dlg size = '35'><per>CELIA</per>Eh, vó-los dous, que estou diante.</dlg>
+<acot size = '43'>Noa e Isidro comparten un sorriso cómplice.</acot>
+<dlg size = '58'><per>CELIA</per>Noa, vai sacando as cousas da maleta que xa vou eu agora.</dlg>
+<dlg size = '29'><per>NOA</per>Despois dirá que non pero...</dlg>
+<acot size = '30'>Celia mira a súa filla, seria.</acot>
+<dlg size = '12'><per>NOA</per>Vou, vou...</dlg>
+<acot size = '79'>Isidro mira a Noa con agarimo. Celia e seu pai quedan sós. Celia achégase a el.</acot>
+<dlg size = '21'><per>CELIA</per>Que tal estás, papá?</dlg>
+<dlg size = '17'><per>ISIDRO</per>Xa me ves, ben.</dlg>
+<acot size = '29'>Celia colle a man de seu pai.</acot>
+<dlg size = '42'><per>CELIA</per>Sabes que estou aquí pra o que necesites.</dlg>
+<dlg size = '22'><per>ISIDRO</per>Estás, esta semana...</dlg>
+<dlg size = '132'><per>CELIA</per>Papá... xa sabes como son as cousas. Pero se necesitas que veña máis tempo collo outra semana, ou os días que faga falta, e veño...</dlg>
+<dlg size = '13'><per>ISIDRO</per>Non é iso...</dlg>
+<dlg size = '227'><per>CELIA</per>Xa sei que non é iso. Non podo imaxina-lo duro que che ten que resultar isto... Mamá e mais ti erádelo todo o un pra o outro... pero eu son a túa filla e estou aquí. Pódesme contar todo o que necesites... Vaiche vir ben, papá.</dlg>
+<dlg size = '29'><per>ISIDRO</per>E que queres que che conte?</dlg>
+<dlg size = '51'><per>CELIA</per>Como te sentes, que che preocupa... O que queiras.</dlg>
+<dlg size = '25'><per>ISIDRO</per>Non teño nada que dicir.</dlg>
+<dlg size = '48'><per>CELIA</per>Pois cando o teñas, aquí estou pra te escoitar.</dlg>
+<acot size = '35'>Celia sóltalle a man e incorpórase.</acot>
+</part>
+<part id = '13'>
+<sec><cap>01</cap><num>13</num><loc>CASA ISIDRO. CUARTO DE CELIA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>NOA</perx>
+<acot size = '87'>Allea á conversa do salón, Noa grávase co móbil: é unha mensaxe de voz para o seu mozo.</acot>
+<dlg size = '141'><per>NOA</per>(Imposta a voz) Xa estou aquí, na apaixonante vila de Abrente. Un lugar de fantasía no que poder gozar dunha marabillosa XUBILACIÓN!</dlg>
+<acot size = '50'>Noa déixase caer na cama e recupera un ton normal.</acot>
+<dlg size = '192'><per>NOA</per>Non sabes que ganas teño de que chegue a finde pra volver a Bilbao. Xa lle dixen a miña nai que o sábado paso a noite na casa dunhas amigas, así que vai pensando onde me vas levar esta vez...</dlg>
+</part>
+<part id = '12B'>
+<sec><cap>01</cap><num>12B</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>CELIA, ISIDRO</perx>
+<acot size = '38'>Celia e Isidro continúan coa conversa.</acot>
+<dlg size = '31'><per>CELIA</per>Sábese algo máis do accidente?</dlg>
+<dlg size = '82'><per>ISIDRO</per>E que máis hai que saber, filla? Ían no coche, estreláronse e... fin da historia!</dlg>
+<acot size = '76'>Está claro que a Isidro non lle gusta que a súa filla pregunte por ese tema.</acot>
+<dlg size = '108'><per>CELIA</per>Díxome a tía Teresa que a Garda Civil está esperando a que lle dean a alta pra tomarlle declaración.</dlg>
+<dlg size = '35'><per>ISIDRO</per>Non saben en que perde-lo tempo...</dlg>
+<dlg size = '50'><per>ISIDRO</per>E logo non sabémo-lo que pasou? Foi un accidente.</dlg>
+<dlg size = '45'><per>CELIA</per>E se conta algo máis? E se se puido evitar?</dlg>
+<dlg size = '82'><per>ISIDRO</per>(Farto) O que tería que contar é de onde viña con túa nai desas horas da noite...</dlg>
+<dlg size = '224'><per>CELIA</per>(Rifándolle) Papá... iso que máis ten? De facer unhas compras, de ver a alguén... Coa escusa de que non tiña carné, mamá sempre atopaba algún veciño que a levase onde fose... Niso era coma min: unha negada ó volante!</dlg>
+<dlg size = '84'><per>ISIDRO</per>(Pouco convencido) Tes razón, filla, pero é que a xente da vila fala e eu...</dlg>
+<acot size = '49'>Celia cóllelle a man a seu pai e mírao aos ollos.</acot>
+<dlg size = '29'><per>CELIA</per>Nós coñeciamos a mamá, non?</dlg>
+<dlg size = '9'><per>ISIDRO</per>Claro...</dlg>
+<acot size = '56'>Celia solta a man de seu pai e trata de cambiar de tema.</acot>
+<dlg size = '26'><per>ISIDRO</per>Nin o sei nin me importa.</dlg>
+<dlg size = '49'><per>CELIA</per>Poderiamos ir facerlle unha visita ó hospital...</dlg>
+<dlg size = '10'><per>ISIDRO</per>Pra que?</dlg>
+<dlg size = '101'><per>CELIA</per>Foi a derradeira persoa que estivo con mamá. Que menos que interesarnos por saber como está.</dlg>
+<dlg size = '107'><per>ISIDRO</per>Se alguén perdeu algo aquí, somos nós. E nin a súa muller nin ningún dos seus fillos me viñeron ver a min.</dlg>
+<dlg size = '42'><per>CELIA</per>Polo menos podería ir eu ver a Adela e...</dlg>
+<dlg size = '83'><per>ISIDRO</per>Que che quede claro, filla, canta menos relación teñamos con esa familia, mellor.</dlg>
+</part>
+<part id = '14'>
+<sec><cap>01</cap><num>14</num><loc>CASA CASTRO. SALÓN.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>RAÚL, ADELA</perx>
+<acot size = '178'>Raúl está a meter unha revista e algún doce nunha bolsa ou maletín para levar ao hospital. Adela está sentada no sofá, botándolle un ollo a unha revista de decoración ou similar.</acot>
+<dlg size = '63'><per>RAÚL</per>Mamá, vou ó hospital levarlle unhas cousas a papá. Vés comigo?</dlg>
+<dlg size = '52'><per>ADELA</per>É pouca cousa, non? Necesíta-la miña axuda pra iso?</dlg>
+<dlg size = '123'><per>RAÚL</per>Non, non preciso a túa axuda, pero estaría ben que viñeses. Desde que o trasladaron a planta non lle fixeches unha visita.</dlg>
+<dlg size = '40'><per>ADELA</per>Dilo coma se pasase unha eternidade...</dlg>
+<dlg size = '27'><per>RAÚL</per>Pasaron xa dúas semanas...</dlg>
+<dlg size = '35'><per>ADELA</per>Mañá vou, fillo, non te preocupes.</dlg>
+<dlg size = '56'><per>RAÚL</per>Levas dúas semanas dicindo o mesmo... Papá necesítate.</dlg>
+<dlg size = '14'><per>ADELA</per>Tan mal está?</dlg>
+<dlg size = '13'><per>RAÚL</per>Non, pero...</dlg>
+<dlg size = '19'><per>ADELA</per>Pois xa irei mañá.</dlg>
+<dlg size = '36'><per>RAÚL</per>As veciñas da vila andan falando...</dlg>
+<dlg size = '142'><per>ADELA</per>Esas sempre falan... Se vou porque vou e se non vou porque non vou. Pero digo eu que terei os meus motivos pra non querer ve-lo teu pai, non?</dlg>
+<dlg size = '122'><per>RAÚL</per>Espero que o motivo non sexa que lle dás máis creto ó que din na vila de Olga e de papá que ó que di o teu propio marido.</dlg>
+<dlg size = '35'><per>ADELA</per>(Retadora) E logo que din na vila?</dlg>
+<dlg size = '115'><per>RAÚL</per>Non me fagas dicircho, que ben o sabes. Á xente gústalle falar, inventar chismes... pero sen ningún tipo de proba.</dlg>
+<dlg size = '95'><per>ADELA</per>Pero eu teño que cre-la versión do meu esposo de que se ofreceu a axudarlle á pobre doutora...</dlg>
+<dlg size = '38'><per>RAÚL</per>Home, el estaba alí e os veciños non.</dlg>
+<dlg size = '75'><per>ADELA</per>E coa doutora morta, só nos queda a palabra de teu pai... moi conveniente.</dlg>
+<dlg size = '98'><per>RAÚL</per>Mamá, xa vale... Nalgún momento teredes que face-las paces. E terá que ser máis pronto que tarde.</dlg>
+<dlg size = '8'><per>ADELA</per>E logo?</dlg>
+<dlg size = '49'><per>RAÚL</per>Porque se todo vai ben, mañá xa lle dan a alta.</dlg>
+<dlg size = '110'><per>ADELA</per>(Contrariada) Pois perfecto. Entón, máis motivos pra non ir hoxe ó hospital. Se xa vai vir el mañá...</dlg>
+<acot size = '37'>Raúl dálle un bico á súa nai e vaise.</acot>
+<dlg size = '63'><per>RAÚL</per>Como queiras, pero mañá non che vai ser tan sinxelo non velo.</dlg>
+<acot size = '150'>Adela queda molesta, non lle fixo graza ningunha o comentario do seu fillo. Colle a revista e apértaa con forza entre as súas mans. Queda esnaquizada.</acot>
+</part>
+<part id = '15'>
+<sec><cap>01</cap><num>15</num><loc>CASA EIROA. BAR.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>ELBA, TERESA, DÚAS SEÑORAS</perx>
+<acot size = '158'>Xunto á barra, Teresa estalle a ensinar a Elba o oficio de camareira. Observan a DÚAS SEÑORAS que acaban de chegar e sentan nunha mesa. Non hai máis clientes.</acot>
+<dlg size = '108'><per>TERESA</per>Non lles tes que coller medo. Este traballo é moi sinxelo, Elba. Só hai que ter un pouco de don de xentes.</dlg>
+<dlg size = '21'><per>ELBA</per>O meu punto forte...</dlg>
+<dlg size = '67'><per>TERESA</per>Non sexas parva e escoita. Ves esas señoras que acaban de entrar?</dlg>
+<dlg size = '23'><per>ELBA</per>Si, que pasa con elas?</dlg>
+<acot size = '76'>Teresa fala mentres comeza a servir un café con gotas e un licor de guindas.</acot>
+<dlg size = '551'><per>TERESA</per>Son Puri e Charo. Levan vindo aquí máis de vinte anos. Atende. (A toda velocidade) O marido de Puri, a da esquerda, é camioneiro e teñen tres fillos: Xurxo, Emilio e Hadrián. O seu olliño dereito. Calquera cousa que che diga del, aínda que sexa que botou un peido, ti tes que quedar asombrada, coma se fose un prodixio. Xenial! Fantástico! Marabilloso! A da dereita é Charo, viúva e namorada do seu papagaio Coco. Tan asombroso coma o fillo de Puri, ti xa me entendes. Puri sempre pide un licor de guindas e Charo un café con gotas. Aquí tes.</dlg>
+<acot size = '56'>Teresa entrégalle a Elba unha bandexa coas consumicións.</acot>
+<dlg size = '309'><per>TERESA</per>Uxía tíñaas comendo da súa man e sempre lle deixaban unha boa propina. O único que tes que facer é leva-las bebidas e sorrir. Elas xa se encargan de contarche a súa vida, falan ata coas pedras. O café con gotas pra Charo, a da dereita, e o licor de guindas pra Puri, a da esquerda. Veña, filla, que ti podes.</dlg>
+<acot size = '112'>Elba vai cara á mesa coas consumicións. Dálle a cada señora a bebida que non é e sen mediar palabra dá a volta. </acot>
+<dlg size = '43'><per>TERESA</per>Pero ti escoitaches algo do que che dixen?</dlg>
+<dlg size = '36'><per>ELBA</per>Síntoo, mamá, eu non son coma Uxía.</dlg>
+<acot size = '35'>Elba vai directamente ao reservado.</acot>
+</part>
+<part id = '16'>
+<sec><cap>01</cap><num>16</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>CELIA, ISIDRO</perx>
+<acot size = '211'>Isidro toma un viño mentres mira a correspondencia. Separa un par de cartas e un folleto e déixaas nunha esquina da cociña, que está chea delas. Celia entra na cociña coa roupa lavada e seca e comeza a dobrala. </acot>
+<dlg size = '38'><per>CELIA</per>Esa correspondencia... era pra mamá?</dlg>
+<dlg size = '135'><per>ISIDRO</per>Propaganda case todo. E os do banco, que parece que non se decataron de que morreu ou fan coma se nada pra seguir cobrando comisións.</dlg>
+<acot size = '77'>Celia colle unha bolsa de papel e comeza a meter as cartas de forma ordenada.</acot>
+<dlg size = '114'><per>CELIA</per>Despois mándolles un correo. Papá, non podes seguir así. Hai dúas semanas que falta mamá e mira como está todo...</dlg>
+<dlg size = '48'><per>ISIDRO</per>Quen vive aquí son eu e a min non me molesta...</dlg>
+<dlg size = '59'><per>CELIA</per>Agora tamén estamos nós e ten que estar todo no seu sitio.</dlg>
+<dlg size = '83'><per>ISIDRO</per>Ti verás, pero cando marchedes dentro de catro días vai volver estar todo igual...</dlg>
+<dlg size = '116'><per>CELIA</per>Non mo poñas máis difícil, papá. Aínda que sexa, garda ben as cousas de mamá, que o tes todo ciscado polo cuarto...</dlg>
+<dlg size = '58'><per>ISIDRO</per>Mete a súa roupa nunha caixa e dálla a quen a poida usar.</dlg>
+<dlg size = '20'><per>CELIA</per>Non falas en serio.</dlg>
+<dlg size = '15'><per>ISIDRO</per>E por que non?</dlg>
+<dlg size = '32'><per>CELIA</per>Porque son as cousas de mamá!</dlg>
+<acot size = '30'>Isidro cala. Celia recomponse.</acot>
+<dlg size = '108'><per>CELIA</per>Xa está ben! Non quero oír máis parvadas. Levántante de aí e axúdame. Sabes onde pode esta-lo seu colgante?</dlg>
+<acot size = '28'>Isidro segue sentado á mesa.</acot>
+<dlg size = '21'><per>ISIDRO</per>O chamador de anxos?</dlg>
+<dlg size = '79'><per>CELIA</per>Si, claro. O que levaba sempre. Estíveno buscando pra o enterro pero nada...</dlg>
+<dlg size = '30'><per>ISIDRO</per>Como non estea na consulta...</dlg>
+<dlg size = '56'><per>CELIA</per>Papá! Aínda non recollíche-las súas cousas da consulta?</dlg>
+<acot size = '20'>Isidro non responde.</acot>
+<dlg size = '53'><per>CELIA</per>De verdade, papá, que ía pensar mamá se te vise así?</dlg>
+<dlg size = '94'><per>ISIDRO</per>Non lle sorprendería, ela sabía como son. O que non teño tan claro é se eu a coñecía a ela...</dlg>
+<dlg size = '26'><per>CELIA</per>Que queres dicir con iso?</dlg>
+<dlg size = '6'><per>ISIDRO</per>Nada.</dlg>
+<acot size = '47'>Celia queda moi mosca co comentario de seu pai.</acot>
+<dlg size = '16'><per>CELIA</per>Papá, que pasa?</dlg>
+<dlg size = '99'><per>ISIDRO</per>Vós falabades case tódolos días por teléfono... Nos últimos días, pareceuche que estaba diferente?</dlg>
+<dlg size = '85'><per>CELIA</per>Falabamos tódolos días, si, pero estaba coma sempre: con moito traballo, pero feliz.</dlg>
+<dlg size = '30'><per>ISIDRO</per>E non falabades de máis nada?</dlg>
+<dlg size = '177'><per>CELIA</per>Falabamos de moitas cousas: da consulta, dalgún lercheo de Abrente, da tía Teresa... pero, sobre todo, do que máis queremos cada unha: eu faláballe de Noa e ela falábame de ti.</dlg>
+<dlg size = '6'><per>ISIDRO</per>Xa...</dlg>
+<acot size = '94'>Isidro baixa a cabeza, parece que lle convenceu a explicación. Pero volve á carga, preocupado.</acot>
+<dlg size = '23'><per>ISIDRO</per>E non che contou máis?</dlg>
+<dlg size = '34'><per>CELIA</per>Que máis querías que me contase?</dlg>
+<dlg size = '36'><per>ISIDRO</per>Non sei... a ti contábache cousas.</dlg>
+<dlg size = '37'><per>CELIA</per>Xa che digo eu que non foron todas.</dlg>
+<dlg size = '31'><per>ISIDRO</per>(Preocupado) A que te refires?</dlg>
+<dlg size = '69'><per>CELIA</per>Que oxalá me dixese o desastre que te volviches coas cousas da casa!</dlg>
+<acot size = '66'>Isidro esboza un leve sorriso, pero segue visiblemente preocupado.</acot>
+<dlg size = '86'><per>CELIA</per>Vou á consulta polo colgante. Cando volva, a ver se polo menos te-la cociña ordenada.</dlg>
+<acot size = '72'>Celia vaise. Isidro non fai o menor ademán de moverse. Segue preocupado.</acot>
+</part>
+<part>
+<sec>TRANSICIÓNS VILA DE ABRENTE</sec>
+</part>
+<part id = '17'>
+<sec><cap>01</cap><num>17</num><loc>CENTRO MÉDICO. SALA DE ESPERA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>CELIA, MAURI</perx>
+<acot size = '80'>Celia chega á sala de espera onde está MAURI (80), que ao vela corre cara a ela.</acot>
+<dlg size = '67'><per>MAURI</per>Celia! Oh, Celia! Menos mal que estás aquí! Necesito a túa axuda.</dlg>
+<dlg size = '17'><per>CELIA</per>Mauri, que pasa?</dlg>
+<dlg size = '67'><per>MAURI</per>Levamos dúas semanas sen médico! Catorce días! Isto é un inferno!</dlg>
+<dlg size = '38'><per>CELIA</per>Mauri, estás ben? Pásache algo grave?</dlg>
+<dlg size = '82'><per>MAURI</per>Podería morrer en calquera momento: un infarto, unha embolia, un paro cardíaco!!!</dlg>
+<dlg size = '54'><per>CELIA</per>Mauri, pódese saber que che ocorre? Que síntomas tes?</dlg>
+<dlg size = '132'><per>MAURI</per>Ningún. Unha lixeira dor de gorxa, pero... e se me pasase algo grave e non hai médico en Abrente? É pensalo e empezar a marearme...</dlg>
+<acot size = '49'>Mauri finxe un pequeno desmaio e Celia sosteno.  </acot>
+<dlg size = '144'><per>MAURI</per>(Recuperado e animado) Pero que alegría que esteas aquí! Que sorte temos de que sexas ti quen se vai facer cargo da consulta de túa nai!</dlg>
+<dlg size = '29'><per>CELIA</per>Un momento, Mauri. Eu non...</dlg>
+<dlg size = '74'><per>MAURI</per>Con tal de que séxa-la metade de boa ca ela, conseguirei o meu obxectivo.</dlg>
+<dlg size = '17'><per>CELIA</per>O teu obxectivo?</dlg>
+<dlg size = '158'><per>MAURI</per>Se-lo home máis vello de Galicia. Aínda hai máis de trescentas persoas por diante de min, pero sabes que? Xuntos ímolo conseguir! Só temos que ter paciencia.</dlg>
+<acot size = '14'>Celia alucina.</acot>
+<dlg size = '52'><per>MAURI</per>E agora pódesme mira-la gorxa? Non vaia se-lo demo!</dlg>
+<acot size = '51'>Mauri abre a boca ao máximo. Celia cérralle a boca.</acot>
+<dlg size = '96'><per>CELIA</per>Mauri, síntoo. Eu non son a nova médica de Abrente, pero seguro que vén alguén mellor ca min...</dlg>
+<dlg size = '124'><per>MAURI</per>Se quedas, cando me entrevisten as televisións, prometo dicir que conseguín se-lo home máis vello de Galicia grazas a ti...</dlg>
+<dlg size = '47'><per>CELIA</per>Mauri, agradézoche a confianza, pero non podo.</dlg>
+<dlg size = '72'><per>MAURI</per>(Picado) Ti verás, pero daquela a fama vai ser pra outro doutor.</dlg>
+<acot size = '19'>Mauri volve sentar.</acot>
+<dlg size = '82'><per>CELIA</per>Vas quedar aí sentado esperando polo novo médico? Mira que pode tardar semanas...</dlg>
+<dlg size = '116'><per>MAURI</per>Se non hai médico tereime que conformar con Santi. (vendo que non hai ninguén esperando) Parece que son o seguinte.</dlg>
+<dlg size = '53'><per>CELIA</per>O enfermeiro de miña nai? Está pasando el consulta?</dlg>
+<dlg size = '57'><per>MAURI</per>E alguén terá que face-lo traballo que non fan outras...</dlg>
+<acot size = '65'>Celia non entende nada e diríxese decidida á consulta de súa nai.</acot>
+</part>
+<part id = '18'>
+<sec><cap>01</cap><num>18</num><loc>CENTRO MÉDICO. CONSULTA.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>CELIA, SANTI, PACIENTE</perx>
+<acot size = '208'>Celia irrompe na consulta. Atopa a Santi auscultando un PACIENTE en camiseta interior. Celia alucina ao recoñecer a Santi e ao ver o que está facendo. Santi está molesto pola forma brusca de entrar de Celia. </acot>
+<dlg size = '16'><per>CELIA</per>Ti... es Santi?</dlg>
+<dlg size = '84'><per>SANTI</per>(Molesto) Ola, Celia. Si, son Santi. E el é Antón, que anda algo acatarrado.</dlg>
+<acot size = '25'>O paciente saúda coa man.</acot>
+<dlg size = '54'><per>SANTI</per>E agora que xa estamos todos presentados, que queres?</dlg>
+<dlg size = '80'><per>CELIA</per>(Sorprendida) Quería recupera-lo colgante de miña nai, pero iso non é...</dlg>
+<acot size = '18'>Santi interrómpea.</acot>
+<dlg size = '41'><per>SANTI</per>O chamador de anxos? Non o vin por aquí.</dlg>
+<acot size = '58'>Santi volve ó seu. Celia recupera a súa quenda de palabra.</acot>
+<dlg size = '151'><per>CELIA</per>Pero iso non é o que importa agora. (A Antón) Antón, verdade? Podes saír un momento pra que o enfermeiro e mais eu poidamos ter unhas palabras?</dlg>
+<acot size = '43'>Antón fai ademán de saír pero Santi deteno.</acot>
+<dlg size = '46'><per>SANTI</per>Non, Antón, queda que aínda non terminamos...</dlg>
+<dlg size = '98'><per>CELIA</per>Por favor, Antón, sae un momento e despois se tal xa rematáde-lo que sexa que esteades facendo...</dlg>
+<dlg size = '76'><per>SANTI</per>Antón, quen te está atendendo son eu. Así que, ata que non rematemos non...</dlg>
+<dlg size = '121'><per>CELIA</per>El non é médico, Antón. Polo que non te pode atender, así que é mellor que marches antes de que che empeore o que teñas.</dlg>
+<dlg size = '191'><per>SANTI</per>Antón, queda, que Celia xa sabe que levamos dúas  semanas sen médico e será mellor que te vexa un sanitario, aínda que non sexa médico, que deixar que un pequeno arrefriado acabe en pulmo...</dlg>
+<dlg size = '65'><per>CELIA</per>Xa está ben! Antón, fóra! E ti, pódese saber que estás facendo?</dlg>
+<acot size = '43'>Antón sae da consulta tan rápido como pode.</acot>
+<dlg size = '32'><per>SANTI</per>Preocuparme polos meus veciños.</dlg>
+<dlg size = '195'><per>CELIA</per>Pero non te dás de conta do irresponsable que estás sendo!? Unha cousa é cambiar gasas, poñer inxeccións ou medi-la tensión, e outra moi distinta pasar consulta. Ti non es médico, es enfermeiro.</dlg>
+<dlg size = '235'><per>SANTI</per>Ademais de subestimar toda unha profesión, pensaches no tipo de casos que temos aquí? A gran maioría dos pacientes o único que queren é ser escoitados. Algo no que os enfermeiros adoitamos ser bastante mellores cós médicos, por certo.</dlg>
+<dlg size = '51'><per>CELIA</per>E se che toca algún caso grave, que pasaría entón?</dlg>
+<dlg size = '160'><per>SANTI</per>Celia, levo meses traballando con túa nai e coñezo o historial dos pacientes mellor que ninguén. Se aparecese un caso grave ou complicado mandaríao ó hospital.</dlg>
+<dlg size = '111'><per>CELIA</per>E como saberías que é grave? Iso son decisións que ten que tomar un médico, non un enfermeiro con aspiracións!</dlg>
+<dlg size = '58'><per>SANTI</per>Celia, non sei o que che molestou, pero de verdade que...</dlg>
+<dlg size = '122'><per>CELIA</per>(Rota) Con que dereito estás ocupando a consulta de miña nai!? Con que dereito estás usando as súas cousas? FÓRA!</dlg>
+<acot size = '55'>Santi mira a Celia, compasivo, e vaise sen dicir nada. </acot>
+<dlg size = '68'><per>CELIA</per>(Máis acougada) Se te volvo ver pasando consulta, dou parte.</dlg>
+<acot size = '26'>Celia queda soa, aflixida.</acot>
+</part>
+<part id = '19'>
+<sec><cap>01</cap><num>19</num><loc>CASA EIROA. BAR.</loc><ub>INT</ub><amb>DÍA</amb></sec>
+<perx>TERESA, ELBA, ISIDRO, COMENSAIS</perx>
+<acot size = '63'>Teresa está a poñer uns viños. Cando ve chegar a Isidro, sorrí.</acot>
+<dlg size = '105'><per>TERESA</per>Isidro, que alegría verte de volta no bar! Levar isto soa estache sendo máis complicado do que cría...</dlg>
+<acot size = '58'>Isidro senta á barra, colle un dos viños e dálle un grolo.</acot>
+<dlg size = '16'><per>ISIDRO</per>Grazas, Teresa.</dlg>
+<acot size = '95'>Teresa, sen darlle moita importancia, saca unha nova copa e volve abrir a botella para enchela.</acot>
+<dlg size = '171'><per>TERESA</per>Volver traballar é o mellor que poderías facer, así tería-la cabeza ocupada noutra cousa. Ademais, á nova camareira non lle viría mal que lle deses unhas clases...</dlg>
+<dlg size = '48'><per>ELBA</per>Mamá, que te estou escoitando. Eu e todo o bar.</dlg>
+<acot size = '48'>Elba achégase a recoller os viños cunha bandexa.</acot>
+<dlg size = '52'><per>TERESA</per>Elba, cariño, non te preocupes, que o fas moi ben.</dlg>
+<acot size = '29'>Elba dálle un bico a seu tío.</acot>
+<dlg size = '62'><per>ELBA</per>Ola, tío Isidro! Non sabes cantas ganas teño de que volvas...</dlg>
+<acot size = '57'>Elba pon os viños na bandexa con torpeza e lévaos amodo. </acot>
+<dlg size = '72'><per>TERESA</per>(A Isidro) Daquela que, contamos contigo pra a quenda da noite?</dlg>
+<dlg size = '94'><per>ISIDRO</per>E non poderei estar tranquilo en ningún sitio? Que vos pasa a tódalas mulleres desta familia?</dlg>
+<dlg size = '33'><per>TERESA</per>Isidro, pasouche algo con Celia?</dlg>
+<dlg size = '58'><per>ISIDRO</per>Nada, Teresa, o de sempre. Xa sabes como é a túa sobriña!</dlg>
+<dlg size = '148'><per>TERESA</per>A miña sobriña, que casualmente é a túa filla, só veu á vila botarche unha man. Non sexas duro con ela, que nos coñecemos. Celia só quere axudar...</dlg>
+<acot size = '67'>Elba sérvelles os viños aos comensais e comeza a recoller as copas.</acot>
+<dlg size = '118'><per>ISIDRO</per>Pois eu o único que quero é un pouco de tranquilidade. Que me deixedes en paz dunha santa vez. É tanto pedir, cuñada?</dlg>
+<acot size = '168'>O ruído da bandexa ao caer é moi forte. Isidro levántase coma un resorte e vai onde está Elba anicada recollendo os cristais. Teresa vai ao reservado por unha vasoira. </acot>
+<dlg size = '27'><per>ISIDRO</per>Pódese saber que fixeches?</dlg>
+<dlg size = '14'><per>ELBA</per>Síntoo, eu...</dlg>
+<dlg size = '34'><per>ISIDRO</per>Aparta, que aínda te vas cortar.</dlg>
+<acot size = '100'>Elba non sabe que facer coa bandexa, deixa os cristais enriba da mesa dos comensais. Está bloqueada.</acot>
+<dlg size = '94'><per>ISIDRO</per>Pódese saber que estás facendo? Ademais de torpe, inútil... Como se che ocorre deixar iso aí?</dlg>
+<acot size = '58'>Elba vai recoller os cristais, pero Isidro detena de novo.</acot>
+<dlg size = '226'><per>ISIDRO</per>Lisca de aquí. Non fas máis que estorbar. A túa irmá dábaselle moi ben pero ti... ti...  ti non es ela! E a culpa non é túa, a culpa é de túa nai que se empeña en que traballes aquí. Pero Uxía xa non está e ti es un desastre.</dlg>
+<acot size = '37'>Elba deixa o mandil e vaise chorando.</acot>
+<acot size = '194'>Teresa sae do reservado coa vasoira e o recolledor. Parece que vai saltar pero ve que Isidro, de súpeto, se bota a chorar e sae do restaurante. Teresa achégase aos comensais e comeza a recoller.</acot>
+<dlg size = '34'><per>TERESA</per>Síntoo. Estades todos convidados.</dlg>
+</part>
+<part>
+<sec>TRANSICIÓN. PASO DE TEMPO A NOITE</sec>
+</part>
+<part id = '20'>
+<sec><cap>01</cap><num>20</num><loc>CASA EIROA. BAR.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>TERESA, CELIA, RAÚL</perx>
+<acot size = '118'>Teresa está recollendo, subindo as cadeiras enriba das mesas, cando ve chegar a Celia. Déixao todo para ir abrazala.  </acot>
+<dlg size = '27'><per>CELIA</per>Tía Teresa, que tal estás?</dlg>
+<dlg size = '101'><per>TERESA</per>Se non chega a ser polo traballo, non sei que sería de min. Cariño, alégrome moito de verte.</dlg>
+<dlg size = '17'><per>CELIA</per>E eu a ti, tía.</dlg>
+<dlg size = '155'><per>TERESA</per>É horrible isto que nos pasou, horrible... Pero é unha sorte que esteas aquí, aínda que non sexa máis que unha semana... Porque eu soa non podo con todo.</dlg>
+<dlg size = '17'><per>CELIA</per>Pero pasou algo?</dlg>
+<dlg size = '33'><per>TERESA</per>Teu pai. Non sabes como se puxo.</dlg>
+<dlg size = '11'><per>CELIA</per>Que fixo?</dlg>
+<dlg size = '105'><per>TERESA</per>Pagala coa pobre Elba. Tivo unha agarrada con ela porque lle caeron catro copas... Tes que falar con el.</dlg>
+<dlg size = '70'><per>CELIA</per>Xa o intento, pero non me escoita. Son incapaz de comunicarme con el.</dlg>
+<dlg size = '148'><per>TERESA</per>Non pode seguir así. Vai terminar facéndose dano ou facéndollo a algún de nós... E de verdade, Celia, que nin Elba nin eu podemos aguantar máis...</dlg>
+<dlg size = '136'><per>CELIA</per>Non se atreve a dicirmo directamente, pero sei que está moi doído. Non só polo accidente, senón polos comentarios que se din na vila...</dlg>
+<dlg size = '144'><per>TERESA</per>Túa nai e Gaspar? Que parvada tan grande! Meu irmán sempre foi algo mullereiro, pero Olga tiña devoción por teu pai. Xamais lle faría algo así.</dlg>
+<dlg size = '79'><per>CELIA</per>Xa o sei, tía. Pero a el metéuselle esa idea na cabeza e non lla dou sacado...</dlg>
+<dlg size = '54'><per>TERESA</per>É que é unha idiotez. Todos sabemos como era túa nai.</dlg>
+<dlg size = '196'><per>CELIA</per>Aínda así, pra que quedase tranquilo, eu quería ir hoxe ó hospital. Pra ver a Gaspar e preguntarllo directamente. E non sabes que me dixo?: “Canto menos teñamos que ver con esa familia, mellor”.</dlg>
+<acot size = '34'>Teresa queda mirando cara á porta.</acot>
+<dlg size = '106'><per>TERESA</per>Pois creo que non vai ser necesario que te achegues ó hospital a preguntar nada. Aí te-lo seu fillo Raúl.</dlg>
+<acot size = '152'>Celia vírase e ve a Raúl, que vai directo cara a ela. Teresa ponse a limpar a cafeteira para deixalos sós. Hai unha historia de amor pasada entre eles. </acot>
+<dlg size = '24'><per>RAÚL</per>Ola, Celia, como estás?</dlg>
+<dlg size = '14'><per>CELIA</per>Imos indo...</dlg>
+<dlg size = '53'><per>RAÚL</per>Perdoa, que pregunta tan estúpida, como vas estar...</dlg>
+<dlg size = '58'><per>CELIA</per>Tranquilo, eu tampouco sei moi ben que dicir estes días.</dlg>
+<dlg size = '93'><per>RAÚL</per>A ti sempre che resultou fácil atopa-las palabras adecuadas... Supoño que iso non cambiaría.</dlg>
+<dlg size = '31'><per>CELIA</per>Cambiaron moitas cousas, Raúl.</dlg>
+<dlg size = '11'><per>RAÚL</per>Imaxino...</dlg>
+<dlg size = '47'><per>CELIA</per>(Cambiando de tema) Como está teu pai?</dlg>
+<dlg size = '59'><per>RAÚL</per>Recuperándose. O máis probable é que mañá lle dean a alta.</dlg>
+<dlg size = '18'><per>CELIA</per>Vaia, alégrome.</dlg>
+<dlg size = '11'><per>RAÚL</per>E teu pai?</dlg>
+<dlg size = '6'><per>CELIA</per>Ben.</dlg>
+<acot size = '29'>Faise un segundo de silencio.</acot>
+<dlg size = '20'><per>CELIA</per>Raúl, que fas aquí?</dlg>
+<dlg size = '54'><per>RAÚL</per>Dixéronme que estabas na vila e quería falar contigo.</dlg>
+<dlg size = '19'><per>CELIA</per>Pois aquí me tes.</dlg>
+<dlg size = '75'><per>RAÚL</per>Supoño que xa escoitaría-los rumores de que meu pai e túa nai... xa sabes.</dlg>
+<dlg size = '33'><per>CELIA</per>Moito lle gusta falar á xente...</dlg>
+<dlg size = '45'><per>RAÚL</per>Eu pódoche asegurar que non estaban xuntos.</dlg>
+<dlg size = '43'><per>CELIA</per>Iso pensaba eu tamén, aínda que meu pai...</dlg>
+<dlg size = '67'><per>RAÚL</per>Dille que meu pai estaba levando a túa nai a unha urxencia médica.</dlg>
+<dlg size = '43'><per>CELIA</per>E sabes de que urxencia médica se trataba?</dlg>
+<dlg size = '94'><per>RAÚL</per>Non, pero en canto lle dean a alta, podedes falar con el e que vos explique o que queirades.</dlg>
+<dlg size = '43'><per>CELIA</per>Raúl, grazas por vir e por contarme isto.</dlg>
+<dlg size = '41'><per>RAÚL</per>Era o mínimo que podía facer. Ademais...</dlg>
+<acot size = '21'>Raúl cala un segundo.</acot>
+<dlg size = '9'><per>CELIA</per>Ademais?</dlg>
+<acot size = '26'>Raúl agarda outro segundo.</acot>
+<dlg size = '102'><per>RAÚL</per>Non quero que as cousas estean mal entre nós, Celia. Pra min segues sendo unha persoa moi importante.</dlg>
+<acot size = '114'>Raúl vaise sen agardar unha resposta de Celia, que queda mirando como se vai, absorta. Teresa achégase á sobriña. </acot>
+<dlg size = '18'><per>TERESA</per>Que quería Raúl?</dlg>
+<dlg size = '31'><per>CELIA</per>Contarme a versión de seu pai.</dlg>
+<dlg size = '35'><per>TERESA</per>Pero vós seguides sendo... amigos?</dlg>
+<dlg size = '65'><per>CELIA</per>Eu non diría tanto. Pero si, supoño que somos “vellos amigos”...</dlg>
+<dlg size = '16'><per>TERESA</per>E que che dixo?</dlg>
+<dlg size = '73'><per>CELIA</per>Que Gaspar levaba a miña nai no coche pra atender unha urxencia médica.</dlg>
+<dlg size = '38'><per>TERESA</per>Ten sentido. Vasllo contar a teu pai?</dlg>
+<dlg size = '100'><per>CELIA</per>Si. Pero se non che importa, voulle dicir que mo contaches ti. Como sempre estás ó tanto de todo...</dlg>
+<dlg size = '76'><per>TERESA</per>Aínda por riba de usarme de coartada, faltouche tempo pra chamarme lareta.</dlg>
+<dlg size = '14'><per>CELIA</per>Grazas, tía.</dlg>
+<acot size = '20'>Celia dálle un bico.</acot>
+<dlg size = '142'><per>CELIA</per>A ver se así consigo que se repoña un pouco. E ti pódesme usar tamén. Conta comigo pra o que necesites. Somos familia e estamos xuntas nisto.</dlg>
+<dlg size = '102'><per>TERESA</per>Que desgraza máis grande. Ti perdiches unha nai. Isidro unha esposa. Pero a min matáronme unha filla.</dlg>
+</part>
+<part id = '21'>
+<sec><cap>01</cap><num>21</num><loc>CASA DE LUCHO. SALÓN.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>LUCHO, (TERESA OFF)</perx>
+<acot size = '169'>Vemos, en penumbra, a parede dunha casa en obras: a medio pintar, con botes de pintura non chan, rodapés a medio poñer... ata chegar a Lucho que, sentado no chan, chora.</acot>
+<dlg size = '170'><per>TERESA(OFF)</per>O maldito Lucho, que a saber como ía conducindo, foi quen ma matou. Arrebatouma de entre os meus brazos... Só espero que el sufra tanto como estamos sufrindo todos nós.</dlg>
+</part>
+<part>
+<sec>SECUENCIA DE MONTAXE</sec>
+<acot size = '63'>Pequena secuencia de montaxe con continuación do off de Teresa.</acot>
+</part>
+<part id = '22'>
+<sec><cap>01</cap><num>22</num><loc>EMPRESA. OFICINA.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>DIMAS, (TERESA OFF)</perx>
+<acot size = '31'>Dimas está afundido na oficina.</acot>
+<dlg size = '41'><per>TERESA(OFF)</per>Que aínda non aceptámo-la perda.</dlg>
+</part>
+<part id = '23'>
+<sec><cap>01</cap><num>23</num><loc>CASA EIROA. PRIVADO.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>ELBA, (TERESA OFF)</perx>
+<acot size = '63'>Elba abre o armario, colle o polo de Uxía e afoga un berro nel.</acot>
+<dlg size = '70'><per>TERESA(OFF)</per>Que cando espertamos, tardamos uns segundos en lembrar que se foron.</dlg>
+</part>
+<part id = '24'>
+<sec><cap>01</cap><num>24</num><loc>CASA EIROA. BAR.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>TERESA, (TERESA OFF)</perx>
+<acot size = '26'>Teresa, soa, chora no bar.</acot>
+<dlg size = '74'><per>TERESA(OFF)</per>Que aínda cremos que os imos ver en calquera momento, en calquera lugar.</dlg>
+</part>
+<part id = '25'>
+<sec><cap>01</cap><num>25</num><loc>CENTRO MÉDICO. CONSULTA.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>CELIA, (TERESA OFF)</perx>
+<acot size = '44'>Celia mira as cousas de súa nai na consulta.</acot>
+<dlg size = '61'><per>TERESA(OFF)</per>Que falamos con eles, coma se aínda nos puidesen responder.</dlg>
+</part>
+<part id = '26'>
+<sec><cap>01</cap><num>26</num><loc>CASA ISIDRO. COCIÑA.</loc><ub>INT</ub><amb>NOITE</amb></sec>
+<perx>ISIDRO, CELIA, (TERESA OFF)</perx>
+<acot size = '40'>Isidro bebe un grolo de viño na cociña. </acot>
+<dlg size = '105'><per>TERESA(OFF)</per>E que nos preguntamos unha e outra vez por que ocorreu, que fixemos mal, e seguimos buscando respostas.</dlg>
+<acot size = '31'>Fin da montaxe e fin da música.</acot>
+<acot size = '12'>Entra Celia.</acot>
+<dlg size = '27'><per>CELIA</per>Aínda estás esperto, papá?</dlg>
+<dlg size = '83'><per>ISIDRO</per>Vou pra vello, cada vez teño o sono máis lixeiro... E ti de onde vés destas horas?</dlg>
+<acot size = '49'>Celia colle unha cadeira e senta xunto a seu pai.</acot>
+<dlg size = '19'><per>CELIA</per>Pasei polo bar...</dlg>
+<dlg size = '86'><per>ISIDRO</per>Non me digas nada. Xa o sei. Paseime. Non volverá ocorrer. Pero Elba é un desastre...</dlg>
+<dlg size = '62'><per>CELIA</per>Xa falaremos diso mañá, papá. (Pausa) Teresa está desfeita...</dlg>
+<dlg size = '53'><per>ISIDRO</per>Coma todos, aínda que o dela... perder unha filla...</dlg>
+<dlg size = '67'><per>CELIA</per>Contoume que Gaspar estaba levando a mamá a unha urxencia médica.</dlg>
+<dlg size = '21'><per>ISIDRO</per>E como sabe ela iso?</dlg>
+<dlg size = '16'><per>CELIA</per>Díxollo Gaspar.</dlg>
+<dlg size = '14'><per>ISIDRO</per>E fíase dese?</dlg>
+<dlg size = '42'><per>CELIA</per>É seu irmán. Non lle ten porque mentir...</dlg>
+<dlg size = '42'><per>ISIDRO</per>Irmáns coma eles fan bos a Caín e a Abel.</dlg>
+<dlg size = '46'><per>CELIA</per>Non te pases. A tía Teresa díxomo por axudar.</dlg>
+<dlg size = '58'><per>ISIDRO</per>E de que urxencia médica se trataba? Ou iso non cho dixo?</dlg>
+<dlg size = '18'><per>CELIA</per>Non, non mo dixo.</dlg>
+<dlg size = '23'><per>ISIDRO</per>Xa mo parecía a min...</dlg>
+<dlg size = '72'><per>CELIA</per>En canto saia do hospital, Gaspar vai vir contarnos todo o que pasou.</dlg>
+<dlg size = '41'><per>ISIDRO</per>Se ese home pon un pé nesta casa, mátoo.</dlg>
+<dlg size = '30'><per>CELIA</per>Non queres sabe-lo que pasou?</dlg>
+<dlg size = '20'><per>ISIDRO</per>Pola boca del, non.</dlg>
+<dlg size = '108'><per>CELIA</per>Xa che dixen que foi a derradeira persoa que estivo con mamá. É o único que nos pode dicir que foi o que...</dlg>
+<dlg size = '24'><per>ISIDRO</per>Cala, Celia! Xa abonda!</dlg>
+<acot size = '20'>Isidro vénse abaixo.</acot>
+<dlg size = '16'><per>CELIA</per>Que pasa, papá?</dlg>
+<dlg size = '40'><per>ISIDRO</per>Gaspar está mentindo! E túa nai tamén!</dlg>
+<acot size = '23'>Celia non entende nada.</acot>
+<dlg size = '17'><per>CELIA</per>Por que dis iso?</dlg>
+<dlg size = '144'><per>ISIDRO</per>Apenas media hora antes do accidente chamei a túa nai porque tardaba en volver. Díxome que estaba cunhas amigas, pero que xa viña pra a casa...</dlg>
+<dlg size = '45'><per>CELIA</per>Pero iso non ten sentido, é imposible que...</dlg>
+<dlg size = '72'><per>ISIDRO</per>Iso é o que me mata... Se non tiña nada que ocultar, por que me mentiu?</dlg>
+<creditos>FIN DO EPISODIO 1</creditos>
+</part>
+</capitulo>

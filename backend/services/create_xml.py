@@ -3,7 +3,7 @@ import re
 
 # Función para convertir los archivos html a un archivo con etiquetas xml.
 def create_xml(ciProject, fileName):
-    path = "./backend/uploads/" + ciProject + "/" 
+    path = f"./backend/uploads/{ciProject}/" 
     fileHTML =  path + fileName + ".html"
 
     # Leer el archivo HTML
