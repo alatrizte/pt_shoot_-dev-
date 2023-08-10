@@ -9,7 +9,6 @@ main = Blueprint('upload', __name__)
 @main.route("/", methods=['POST'])
 def uploader():
 
-    user_pass = os.getenv("PASS_ROOT")
     cwd = os.getcwd()  # Get the current working directory (cwd)
 
     if request.method == "POST":

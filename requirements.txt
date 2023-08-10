@@ -14,5 +14,4 @@ pytest==2.6.0
 python-dotenv==1.0.0
 pytz==2023.3
 soupsieve==2.4.1
-unoserver==1.4
 Werkzeug==2.3.6
