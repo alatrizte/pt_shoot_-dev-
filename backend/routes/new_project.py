@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 
-from models.users import userLogin
 from services.User_tokens import User_tokens
 from services.create_project import create_project
 
