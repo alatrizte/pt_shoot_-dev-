@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 
 from services.User_tokens import User_tokens
-from services.create_project import create_project
+from models.Projects import Projects
 
 main = Blueprint("new_project", __name__)
 
@@ -13,7 +13,7 @@ def new_project():
         if token_consult:
             try:
                 project_name = request.form["project_name"]
-                add_project = create_project (token_consult, project_name)
+                add_project = Projects.create_project (token_consult, project_name)
                 if add_project:
                     return jsonify(message="Proyecto creado correctamente.", success=True)
                 else:

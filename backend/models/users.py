@@ -1,10 +1,11 @@
-from database.db import query
+from database import db
 
 def userLogin(email, password):
 
     print(email, password)
-    sql = f"SELECT * FROM users WHERE user_mail='{email}' AND user_pass='{password}'"
-    conn = query(sql)
+    sql = "SELECT * FROM users WHERE user_mail=%s AND user_pass=%s"
+    values=(email, password)
+    conn = db.query(sql, values)
 
     if len(conn) > 0:
         return conn[0]

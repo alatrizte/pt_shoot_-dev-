@@ -2,7 +2,7 @@ import mysql.connector
 from dotenv import load_dotenv
 import os
 
-def query(sql):
+def conn():
     # Cargar las variables de entorno
     load_dotenv()
 
@@ -14,18 +14,39 @@ def query(sql):
     database = os.getenv("DB_NAME"),
     )
 
+    return mydb
+
+def query(sql, values):
+    
+    conn_db = conn()
     # Crear un cursor para ejecutar la consulta
-    mycursor = mydb.cursor()
+    mycursor = conn_db.cursor()
 
     # Ejecutar la consulta
-    mycursor.execute(sql)
+    mycursor.execute(sql, values)
 
     # Obtener los resultados de la consulta
     results = mycursor.fetchall()
 
     # Cerrar el cursor y la conexión
     mycursor.close()
-    mydb.close()
+    conn_db.close()
 
     return results
+
+def insert(sql, values):
+    conn_db = conn()
+    print (values)
+    # Crear un cursor para ejecutar la consulta
+    mycursor = conn_db.cursor()
+    try:
+        # Ejecutar la consulta
+        mycursor.execute(sql, values)
+        conn_db.commit()
+        # Cerrar el cursor y la conexión
+        mycursor.close()
+        conn_db.close()
+        return True
+    except:
+        return False
 
