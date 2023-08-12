@@ -47,7 +47,7 @@ class Projects:
 
         # tabla de secuencias
         tablename = f"{ci_project}_sequences"
-        sql_sequences = f"CREATE TABLE IF NOT EXISTS {tablename} \
+        sql_sequences = f"CREATE TABLE IF NOT EXISTS {tablename}( \
                 id VARCHAR(8) PRIMARY KEY NOT NULL,\
                 ord INT NOT NULL,\
                 cap INT NOT NULL,\
@@ -57,7 +57,7 @@ class Projects:
                 ambiente VARCHAR (16),\
                 duracion INT,\
                 plan VARCHAR (16),\
-                doit BOOLEAN"
+                doit BOOLEAN)"
         inserts.append((sql_sequences,""))
   
 
@@ -70,7 +70,7 @@ class Projects:
                 off_dialog INT )"
         inserts.append((sql_seq_cast,""))
         
-
+        print ("envio a transacciones")
         crea_tablas = db.transactions(inserts)
         print (crea_tablas)
         return crea_tablas
