@@ -48,5 +48,24 @@ def insert(sql, values):
         conn_db.close()
         return True
     except:
+        conn_db.rollback()
         return False
+    
+def transactions(array):
+    conn_db = conn()
+    # Crear un cursor para ejecutar la consulta
+    mycursor = conn_db.cursor()
+    try:
+        mycursor.start_transaction()
+        for item in array:
+            # Ejecutar la consulta
+            mycursor.execute(item[0], item[1])
 
+        conn_db.commit()
+        # Cerrar el cursor y la conexión
+        mycursor.close()
+        conn_db.close()
+        return True
+    except:
+        conn_db.rollback()
+        return False

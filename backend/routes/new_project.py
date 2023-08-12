@@ -15,7 +15,11 @@ def new_project():
                 project_name = request.form["project_name"]
                 add_project = Projects.create_project (token_consult, project_name)
                 if add_project:
-                    return jsonify(message="Proyecto creado correctamente.", success=True)
+                    print("Creando las tablas relacionadas con el proyecto")
+                    if Projects.create_project_tables(add_project): 
+                        return jsonify(message="Proyecto creado correctamente.", success=True)
+                    else:
+                        return jsonify (message="Error en la creación de las tablas.", success=False)
                 else:
                     return jsonify (message="Error en la creación del proyecto.", success=False)
             except:
