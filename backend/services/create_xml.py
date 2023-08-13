@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import re
+import re, zlib, os
 
 # Función para convertir los archivos html a un archivo con etiquetas xml.
 def create_xml(ciProject, fileName):
@@ -187,3 +187,37 @@ def create_xml(ciProject, fileName):
     fileXML.write('</part>\n')
     fileXML.write('</capitulo>\n')
     fileXML.close()
+    return (path + fileName + ".xml")
+
+def xml_to_db_guion(fileXML):
+    # lee el archivo xml
+    with open(fileXML) as file:
+        xml_data = file.read()
+
+    # Extrae el nombre del archivo
+    name_xml = os.path.basename(fileXML)
+
+    # Crea una instancia de BeautifulSoup
+    soup = BeautifulSoup(xml_data, features="xml")
+
+    # Extrae los datos para la tabla del [ci_project]_guiones
+    titulo = soup.find("titulo").text
+    episodio = soup.find("episodio").text
+    capitulo = soup.find("cap").text
+
+    creditos = soup.find_all("creditos") 
+
+    # Datos dentro de las etiquetas <credito>
+    dialogos = creditos[1].text.strip()
+    argumento = creditos[3].text.strip()
+    edicion = creditos[5].text.strip()
+    vers = creditos[8].text.strip()
+
+    # Concatena el titulo el numero de episodio y la version para obtener un id codificado.
+    data = titulo + episodio + vers
+    id = format(zlib.adler32(data.encode()), '08x')
+
+    # el titulo es la concatenación del titulo y del episodio
+    titulo = f"{titulo} - {episodio}"
+
+    return [id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]

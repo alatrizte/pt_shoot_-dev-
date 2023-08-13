@@ -2,8 +2,9 @@ from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
 import os, time
 
-from services.create_xml import create_xml
+from services.create_xml import create_xml, xml_to_db_guion
 from services.User_tokens import User_tokens
+from models.Files import guiones
 
 main = Blueprint('upload', __name__)
 
@@ -36,14 +37,21 @@ def uploader():
             file_doc = f"{UPLOAD_FOLDER}/{filename}"
             nombre_archivo = os.path.splitext(os.path.basename(file_doc))[0]
             fileHTML = "backend/uploads/" + ciProject + "/" + nombre_archivo + ".html"
-
+            
+            # Convierte el archivo .doc en un .html
             os.system (f"soffice --headless --convert-to 'html:XHTML Writer File:UTF8' {file_doc} --outdir {UPLOAD_FOLDER}")
 
+            # Espera a que el archivo .html esté creado
             while not os.path.exists(fileHTML):
                 time.sleep(1)
             
-            create_xml(ciProject, nombre_archivo)
+            # Convierte el archivo .html en un .xml con los datos limpios.
+            file_xml = create_xml(ciProject, nombre_archivo)
             print("El archivo " + nombre_archivo + ".xml se ha creado.")
+
+            # Extrae los datos del XML de descripción del guión para guardarlo en la tabla [ci_project]_guiones
+            # devuelve una lista.[id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]
+            data_guiones = xml_to_db_guion(file_xml) 
             
             # Retornamos una respuesta satisfactoria
             return jsonify(message="Archivo subido con éxito", success=True)
