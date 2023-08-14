@@ -2,9 +2,8 @@ from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
 import os, time
 
-from services.create_xml import create_xml, xml_to_db_guion
+from services.create_xml import create_xml, xml_to_db_guion, xml_to_db_sequences
 from services.User_tokens import User_tokens
-from models.Files import Files
 
 main = Blueprint('upload', __name__)
 
@@ -51,11 +50,13 @@ def uploader():
 
             # Extrae los datos del XML de descripción del guión para guardarlo en la tabla [ci_project]_guiones
             # devuelve una lista.[id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]
-            data_guiones = xml_to_db_guion(file_xml) 
-            registro_db = Files.guiones(data_guiones, ciProject)
-
+            data_guiones = xml_to_db_guion(file_xml, ciProject) 
+            print (data_guiones)
+            if data_guiones['success'] == True:
+                data_sequences = xml_to_db_sequences(file_xml, ciProject)
+            
             # Retornamos una respuesta satisfactoria
-            return jsonify(registro_db)
+            return jsonify(data_sequences)
     
     else:
         response = jsonify(message="No autorizado")

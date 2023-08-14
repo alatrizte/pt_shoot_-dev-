@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
-import re, zlib, os
+from models.Files import Files
+import re, zlib, os, math
 
 # Función para convertir los archivos html a un archivo con etiquetas xml.
 def create_xml(ciProject, fileName):
@@ -189,7 +190,7 @@ def create_xml(ciProject, fileName):
     fileXML.close()
     return (path + fileName + ".xml")
 
-def xml_to_db_guion(fileXML):
+def xml_to_db_guion(fileXML, ci_project):
     # lee el archivo xml
     with open(fileXML) as file:
         xml_data = file.read()
@@ -221,4 +222,62 @@ def xml_to_db_guion(fileXML):
     # el titulo es la concatenación del titulo y del episodio
     titulo = f"{titulo} - {episodio}"
 
-    return [id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]
+    data_guiones = [id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]
+    registro_db = Files.guiones(data_guiones, ci_project)
+
+    return registro_db
+
+def xml_to_db_sequences(fileXML, ci_project):
+    def count_pages(part):
+        lineas = 0
+
+        for line in part.contents:
+            if line != '\n': lineas += 1
+
+        for child in part.find_all():
+            chars = child.get('size')
+            if chars and int(chars) > 48:
+                many_lines = math.floor(int(chars) / 48)
+                lineas += many_lines
+
+        octavos = round(lineas/4)
+        if octavos == 0: octavos = 1
+
+        return octavos
+    
+    def extract_data(sec):
+        id = f"{sec.cap.text}{sec.num.text}"
+        cap = sec.cap.text
+        num = sec.num.text
+        loc = sec.loc.text
+        ubc = sec.ub.text
+        amb = (sec.amb.text).replace("\xa0", "")
+        return [id, cap, num, loc, ubc, amb]
+    
+    # lee el archivo xml
+    with open(fileXML) as file:
+        xml_data = file.read()
+
+    # Crea una instancia de BeautifulSoup
+    soup = BeautifulSoup(xml_data, features="xml")
+    count = 0
+    flag_error = False
+    for part in soup.find_all("part"):
+        capitulo = part.sec.cap
+        
+        if capitulo:
+            sec_data = extract_data(part.sec)
+            sec_data.insert(1, count)
+            sec_data.append(count_pages(part))
+            sec_data.append('')
+            sec_data.append(False)
+            add_sec = Files.sequences(sec_data, ci_project) 
+            print(sec_data)
+            if add_sec['success'] == False:
+                flag_error = True
+            count += 1
+    
+    if flag_error == False:
+        return {"message": "Los datos han sido añadidos con exito.", "success": True}
+    else:
+        return {"message": "Ha habido un error al añadir los datos.", "success": False}
