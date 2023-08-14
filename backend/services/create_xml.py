@@ -212,6 +212,7 @@ def xml_to_db_guion(fileXML):
     argumento = creditos[3].text.strip()
     edicion = creditos[5].text.strip()
     vers = creditos[8].text.strip()
+    vers = vers.replace("(", "").replace(")","")
 
     # Concatena el titulo el numero de episodio y la version para obtener un id codificado.
     data = titulo + episodio + vers

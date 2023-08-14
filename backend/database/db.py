@@ -46,7 +46,8 @@ def insert(sql, values):
         mycursor.close()
         conn_db.close()
         return True
-    except:
+    except Exception as e:
+        print(f"Error al insertar datos: {e}")
         return False
     
 def transactions(array):

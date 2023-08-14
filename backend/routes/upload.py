@@ -4,7 +4,7 @@ import os, time
 
 from services.create_xml import create_xml, xml_to_db_guion
 from services.User_tokens import User_tokens
-from models.Files import guiones
+from models.Files import Files
 
 main = Blueprint('upload', __name__)
 
@@ -52,9 +52,10 @@ def uploader():
             # Extrae los datos del XML de descripción del guión para guardarlo en la tabla [ci_project]_guiones
             # devuelve una lista.[id, titulo, capitulo, dialogos, argumento, edicion, vers, name_xml]
             data_guiones = xml_to_db_guion(file_xml) 
-            
+            registro_db = Files.guiones(data_guiones, ciProject)
+
             # Retornamos una respuesta satisfactoria
-            return jsonify(message="Archivo subido con éxito", success=True)
+            return jsonify(registro_db)
     
     else:
         response = jsonify(message="No autorizado")
