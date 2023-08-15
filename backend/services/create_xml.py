@@ -190,6 +190,8 @@ def create_xml(ciProject, fileName):
     fileXML.close()
     return (path + fileName + ".xml")
 
+# Función para añadir a la tabla [ci_project]_guiones la lista de todos
+# los guiones que pertenecen al proyecto.
 def xml_to_db_guion(fileXML, ci_project):
     # lee el archivo xml
     with open(fileXML) as file:
@@ -227,6 +229,8 @@ def xml_to_db_guion(fileXML, ci_project):
 
     return registro_db
 
+# Función para añadir a la tabla [ci_project]_sequences las descripciones 
+# de cada secuencia del proyecto.
 def xml_to_db_sequences(fileXML, ci_project):
     def count_pages(part):
         lineas = 0
@@ -281,8 +285,11 @@ def xml_to_db_sequences(fileXML, ci_project):
         return {"message": "Los datos han sido añadidos con exito.", "success": True}
     else:
         return {"message": "Ha habido un error al añadir los datos.", "success": False}
-    
+
+# Función para añadir a la tabla [ci_project]_cast donde se almacenan 
+# la lista de los personajes que intervienen en el proyecto.
 def xml_to_db_perx(fileXML, ci_project):
+
     from bs4 import BeautifulSoup
 
     with open(fileXML) as file:
@@ -293,29 +300,45 @@ def xml_to_db_perx(fileXML, ci_project):
 
     interpretan = soup.find_all('perx')
 
-
+    # Crea un diccionario para los personajes { 'perdonaje': num_caracteres_dialogo }
     dic_per = {}
-    for actores in interpretan:
-        lista_actores = actores.text.split(", ")
-        for actor in lista_actores:
-            actor = actor.replace("(", "").replace(" OFF)", "")
-            dic_per[actor] = 0
 
+    # Lista los personajes que aparecen en cada secuencia.
+    for personajes in interpretan:
+        lista_personajes = personajes.text.split(", ")
+        for personaje in lista_personajes:
+            personaje = personaje.replace("(", "").replace(" OFF)", "")
+            dic_per[personaje] = 0
+
+    # Busca los dialogos del guion.
     dialogos = soup.find_all('dlg')
 
+    # Extrae los nombres de los personajes con texto en los dialogos.
     for dialogo in dialogos:
         per = dialogo.per.text
         per = per.replace("(", "").replace("OFF)", "")
 
+        # Añade como valor de cada personaje el tamaño en caracteres de su texto
+        # Este valor se actualiza con cada linea de dialogo.
         try:
             size_dlg = dic_per[per]
             suma_dlg = size_dlg + int(dialogo['size'])
             dic_per[per] = suma_dlg
         except:
+            # Si el personaje no está definido como interprete no se tiene en cuenta su texto.
+            # Ejemplo: puede aparecer un TODOS como personaje. En este caso se excluye aunque tiene texto.
             print(per)
-        
+
+    # Borra los personajes que no tienen texto en los dialogos. 
     del_items = [clave for clave, valor in dic_per.items() if valor == 0]
     for clave in del_items:
         del dic_per[clave]
+    
+    # Ordena el diccionario de mayor valor a menor.
+    # Esto sirve para el nc (numero de personaje)
+    sorted_dic = dict(sorted(dic_per.items(), key=lambda x: x[1], reverse=True))
 
+    #id = format(zlib.adler32(data.encode()), '08x')
     print (dic_per)
+
+   
