@@ -281,3 +281,41 @@ def xml_to_db_sequences(fileXML, ci_project):
         return {"message": "Los datos han sido añadidos con exito.", "success": True}
     else:
         return {"message": "Ha habido un error al añadir los datos.", "success": False}
+    
+def xml_to_db_perx(fileXML, ci_project):
+    from bs4 import BeautifulSoup
+
+    with open(fileXML) as file:
+            xml_data = file.read()
+
+    # Crea una instancia de BeautifulSoup
+    soup = BeautifulSoup(xml_data, features="xml")
+
+    interpretan = soup.find_all('perx')
+
+
+    dic_per = {}
+    for actores in interpretan:
+        lista_actores = actores.text.split(", ")
+        for actor in lista_actores:
+            actor = actor.replace("(", "").replace(" OFF)", "")
+            dic_per[actor] = 0
+
+    dialogos = soup.find_all('dlg')
+
+    for dialogo in dialogos:
+        per = dialogo.per.text
+        per = per.replace("(", "").replace("OFF)", "")
+
+        try:
+            size_dlg = dic_per[per]
+            suma_dlg = size_dlg + int(dialogo['size'])
+            dic_per[per] = suma_dlg
+        except:
+            print(per)
+        
+    del_items = [clave for clave, valor in dic_per.items() if valor == 0]
+    for clave in del_items:
+        del dic_per[clave]
+
+    print (dic_per)
