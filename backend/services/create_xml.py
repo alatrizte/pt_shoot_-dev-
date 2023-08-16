@@ -134,7 +134,6 @@ def create_xml(ciProject, fileName):
                 tiene_intercut = 'intercut="true"'
             # crea una lista de los datos de la secuencia CAPITULO, NUMERO SEC, LOCALIZACION, UBICACION, AMBIENTE
             seclist = sec.split(".")
-            print(seclist)
             # Si la lista tiene parametros
             if len(seclist) > 2:
                 cap = seclist[0]    # CAPITULO
