@@ -25,20 +25,27 @@ class Files:
             return {"message": f"Error al introducir al sec id {data[0]}: {e}", "success": False}
         
     @classmethod
-    def casting(cls, data, ci_project):        
+    def casting(cls, data, ci_project):  
+        # key = nombre personaje
+        # value = id      
         for key, value in data.items():
+            # Consulta para saber el último numero de personaje 'nc'
             sql = f"SELECT nc FROM {ci_project}_cast order by nc DESC LIMIT 1"
             consulta = db.query(sql, '')
 
+            # Caso afirmativo sumamos 1 a 'nc'
             if consulta:
                 nc = consulta[0][0] + 1
             else:
-                nc = 1
+                nc = 1 # Caso de ser el primer personaje en el proyecto.
 
+            # Consulta sql para introducir el nombre del personaje
             sql = f"INSERT IGNORE INTO {ci_project}_cast (id, nc, character_name) VALUES (%s, %s, %s)"
             val = (value, nc, key)
             try:
-                db.insert(sql, val)
+                db.insert(sql, val) # Envío a la Base de Datos.
             except Exception as e:
                 error = f"Error al introducir el personaje {key}: {e}" 
-        return "añadidos a la base de datos"
+                return {"message": error, "success": False}
+            
+        return {"message": "Lista de personajes añadidos a la base de datos", "success": True}

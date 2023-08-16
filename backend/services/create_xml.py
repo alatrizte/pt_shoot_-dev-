@@ -128,10 +128,13 @@ def create_xml(ciProject, fileName):
                 fileXML.write("</part>\n")
 
             sec = parrafo.text.upper()
-
+            tiene_intercut = ""
+            if 'INTERCUT' in sec:
+                sec = sec.replace("-INTERCUT-", "")
+                tiene_intercut = 'intercut="true"'
             # crea una lista de los datos de la secuencia CAPITULO, NUMERO SEC, LOCALIZACION, UBICACION, AMBIENTE
             seclist = sec.split(".")
-
+            print(seclist)
             # Si la lista tiene parametros
             if len(seclist) > 2:
                 cap = seclist[0]    # CAPITULO
@@ -143,9 +146,10 @@ def create_xml(ciProject, fileName):
 
                 # inicia el bloque de secuencia
                 fileXML.write("<part id = '" + num + "'>\n")
-
-                for item in seclist:
+                
+                for item in seclist:    
                     if 'EXT' in item or 'INT' in item or 'NAT' in item:
+                        
                         ub += item
                         ub_flag = False # cambia la bandera a false para indicar que lo siguiente es ambiente
 
@@ -153,10 +157,10 @@ def create_xml(ciProject, fileName):
                         # con la bandera en true estos datos son de localización.
                         loc += item + "."
 
-                    elif item != "INTERCUT" and seclist.index(item) > 2:
+                    elif seclist.index(item) > 2:
                         amb += item
                         
-                fileXML.write("<sec><cap>"+cap+"</cap><num>"+num+"</num><loc>"+loc.strip()+"</loc><ub>"+ub.strip()+"</ub><amb>"+amb.strip()+"</amb></sec>\n")
+                fileXML.write(f"<sec {tiene_intercut}><cap>"+cap+"</cap><num>"+num+"</num><loc>"+loc.strip()+"</loc><ub>"+ub.strip()+"</ub><amb>"+amb.strip()+"</amb></sec>\n")
             else: # si la lista no tiene parametros
                 fileXML.write("<part>\n")
                 fileXML.write("<sec>" + sec + "</sec>\n")
@@ -290,8 +294,6 @@ def xml_to_db_sequences(fileXML, ci_project):
 # la lista de los personajes que intervienen en el proyecto.
 def xml_to_db_perx(fileXML, ci_project):
 
-    from bs4 import BeautifulSoup
-
     with open(fileXML) as file:
             xml_data = file.read()
 
@@ -338,7 +340,18 @@ def xml_to_db_perx(fileXML, ci_project):
     # Esto sirve para el nc (numero de personaje)
     sorted_dic = dict(sorted(dic_per.items(), key=lambda x: x[1], reverse=True))
 
-    #id = format(zlib.adler32(data.encode()), '08x')
-    print (dic_per)
+    # Sustituye el numero de caracteres de cada perosonaje por un id para la base de datos.
+    # El id es una codificación del nombre.
+    for nombre in sorted_dic:
+        id = format(zlib.adler32(nombre.encode()), '08x')
+        sorted_dic[nombre]=id
+
+    # Envía el diccionario a la base de datos.
+    consulta = Files.casting(sorted_dic, ci_project)
+
+    if consulta["success"] == True:
+        return {"message": consulta["message"], "success": True}
+    else:
+        return {"message": f"Error al introducir los datos en la tabla {ci_project}_cast", "success": False}
 
    
