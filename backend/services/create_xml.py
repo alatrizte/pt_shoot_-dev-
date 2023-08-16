@@ -131,7 +131,7 @@ def create_xml(ciProject, fileName):
             tiene_intercut = ""
             if 'INTERCUT' in sec:
                 sec = sec.replace("-INTERCUT-", "")
-                tiene_intercut = 'intercut="true"'
+                tiene_intercut = '-INTERCUT-'
             # crea una lista de los datos de la secuencia CAPITULO, NUMERO SEC, LOCALIZACION, UBICACION, AMBIENTE
             seclist = sec.split(".")
             # Si la lista tiene parametros
@@ -148,7 +148,6 @@ def create_xml(ciProject, fileName):
                 
                 for item in seclist:    
                     if 'EXT' in item or 'INT' in item or 'NAT' in item:
-                        
                         ub += item
                         ub_flag = False # cambia la bandera a false para indicar que lo siguiente es ambiente
 
@@ -159,7 +158,7 @@ def create_xml(ciProject, fileName):
                     elif seclist.index(item) > 2:
                         amb += item
                         
-                fileXML.write(f"<sec {tiene_intercut}><cap>"+cap+"</cap><num>"+num+"</num><loc>"+loc.strip()+"</loc><ub>"+ub.strip()+"</ub><amb>"+amb.strip()+"</amb></sec>\n")
+                fileXML.write(f"<sec><cap>{cap}</cap><num>{num}</num><loc>{loc.strip()} {tiene_intercut}</loc><ub>{ub.strip()}</ub><amb>{amb.strip()}</amb></sec>\n")
             else: # si la lista no tiene parametros
                 fileXML.write("<part>\n")
                 fileXML.write("<sec>" + sec + "</sec>\n")
