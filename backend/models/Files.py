@@ -49,3 +49,21 @@ class Files:
                 return {"message": error, "success": False}
             
         return {"message": "Lista de personajes añadidos a la base de datos", "success": True}
+    
+    @classmethod
+    def cast_seq(cls, data, ci_project):
+
+        # Buscamos en la tabla _cast el id del personaje.
+        sql = f"SELECT id FROM {ci_project}_cast WHERE character_name=%s"
+        val = (data[1],)
+        id_nombre = db.query(sql, val)
+
+        # Si devuelve un id el personaje tiene dialogo y lo almacenamos en la tabla _seq_cast.
+        try:
+           sql = f"INSERT IGNORE INTO {ci_project}_seq_cast (id, cast, off_dialog) VALUES (%s, %s, %s)"
+           val = (data[0], id_nombre[0][0], data[2])
+           db.insert(sql, val)
+        except:
+            pass
+        
+        return {"message": f"Datos introducidos correctamente en la tabla {ci_project}_seq_cast", "success": True}

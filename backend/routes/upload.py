@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
 import os, time
 
-from services.create_xml import create_xml, xml_to_db_guion, xml_to_db_sequences, xml_to_db_perx
+from services.create_xml import create_xml, xml_to_db_guion, xml_to_db_sequences, xml_to_db_perx, xml_to_db_seq_cast
 from services.User_tokens import User_tokens
 
 main = Blueprint('upload', __name__)
@@ -56,9 +56,11 @@ def uploader():
                 data_sequences = xml_to_db_sequences(file_xml, ciProject)
                 if data_sequences['success'] == True:
                     data_cast = xml_to_db_perx(file_xml, ciProject)
+                    if data_cast['success'] == True:
+                        data_seq_cast = xml_to_db_seq_cast(file_xml, ciProject)
             
             # Retornamos una respuesta satisfactoria
-            return jsonify(data_sequences)
+            return jsonify(data_seq_cast)
     
     else:
         response = jsonify(message="No autorizado")

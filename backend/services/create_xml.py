@@ -278,7 +278,7 @@ def xml_to_db_sequences(fileXML, ci_project):
             sec_data.append('')
             sec_data.append(False)
             add_sec = Files.sequences(sec_data, ci_project) 
-            print(sec_data)
+
             if add_sec['success'] == False:
                 flag_error = True
             count += 1
@@ -351,5 +351,42 @@ def xml_to_db_perx(fileXML, ci_project):
         return {"message": consulta["message"], "success": True}
     else:
         return {"message": f"Error al introducir los datos en la tabla {ci_project}_cast", "success": False}
+    
+def xml_to_db_seq_cast(fileXML, ci_project):
+
+    with open(fileXML) as file:
+            xml_data = file.read()
+
+    # Crea una instancia de BeautifulSoup
+    soup = BeautifulSoup(xml_data, features="xml")
+
+    parts = soup.find_all('part')
+
+    for part in parts:
+
+        try:
+            sec = part.find("num").text
+            cap = part.find("cap").text
+        except:
+             pass
+        perx = part.find("perx")
+
+        if perx:
+            # Lista de personajes por secuencia.
+            perx = perx.text.split(", ")
+
+            # Iteramos la lista para almacenar el id de la secuencia con el id del personaje.
+            for item in perx: 
+                off_dialog = False
+                if 'OFF' in item:
+                     off_dialog = True
+                     item = item.replace("(", "").replace(" OFF)","")
+                data = [cap+sec, item, off_dialog]
+                consulta = Files.cast_seq(data, ci_project)
+    
+    if consulta["success"] == True:
+        return {"message": consulta["message"], "success": True}
+    else:
+        return {"message": f"Error al introducir los datos en la tabla {ci_project}_seq_cast", "success": False} 
 
    
