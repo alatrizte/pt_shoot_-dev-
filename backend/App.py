@@ -5,7 +5,7 @@ from routes import projects
 
 app = Flask(__name__)
 
-app.register_blueprint(login.main, url_prefix='/login')
+app.register_blueprint(login.auth)
 app.register_blueprint(upload.main, url_prefix='/upload')
 app.register_blueprint(projects.main, url_prefix='/new-project')
 
