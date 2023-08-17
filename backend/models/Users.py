@@ -8,14 +8,14 @@ class Users:
     def login(cls, email, password):
 
         print(email, password)
-        sql = "SELECT * FROM users WHERE user_mail=%s AND user_pass=%s"
-        values=(email, password)
+        sql = "SELECT * FROM users WHERE user_mail=%s AND user_pass=%s AND key_confirm=%s"
+        values=(email, password, 'confirm!')
         conn = db.query(sql, values)
 
         if len(conn) > 0:
             return {"message": conn[0], "success": True}
         else: 
-            return {"message": "Sin datos de logeo", "success": False}
+            return {"message": "Ha de estar registrado para poder acceder.", "success": False}
 
     @classmethod  
     def signup(cls, name, email, password):

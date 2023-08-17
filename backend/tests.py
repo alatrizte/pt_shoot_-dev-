@@ -9,4 +9,4 @@ from tests import prueba
 #prueba.seq_cast_test()
 
 # Test de envio de correos
-prueba.send_test("iruppen@hotmail.com")
+prueba.send_test("iruppen@hotmail.com", "uVArykRl")
