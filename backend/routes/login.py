@@ -25,7 +25,12 @@ def login():
 @auth.route('/signup', methods=['POST'])
 def signup():
     if request.method == 'POST':
+        name = request.form['name']
         email = request.form['email']
         password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
 
-        return jsonify(message= email)
+        consulta = Users.signup(name, email, password)
+        if consulta['success'] == False:
+            return jsonify(message= consulta['message'])
+        else:
+            return jsonify(message=consulta['message'])
