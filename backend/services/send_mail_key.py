@@ -4,11 +4,17 @@ from email.message import EmailMessage
 from dotenv import load_dotenv
 import os
 
-def send_(mail, key):
+def send_(mail, user):
+    # Genera una key aleatoria para el nuevo usuario
+    # Esta llave se envia por mail para confirmar su registro.
+    key = ''
+    for x in range(8):
+        key += random.choice(string.ascii_letters + string.digits)
+
     # Cargar las variables de entorno
     load_dotenv()
 
-    email_subject = "Registro de usuarios de Planning the Shoot" 
+    email_subject = "Codigo de verificación de Planning the Shoot" 
     sender_email_address = os.getenv("MAIL_USER") 
     receiver_email_address = mail 
     email_smtp = os.getenv("MAIL_HOST")
@@ -23,7 +29,7 @@ def send_(mail, key):
     message['To'] = receiver_email_address 
 
     # Set email body text 
-    message.set_content(f"Para terminar su registro introduzca la clave: <h3>{key}</h3>", subtype='html') 
+    message.set_content(f"Hola {user},<br>Para terminar su registro introduzca la clave:<h3>{key}</h3>", subtype='html') 
 
     # Set smtp server and port 
     server = smtplib.SMTP(email_smtp, '25') 
@@ -42,5 +48,5 @@ def send_(mail, key):
 
     # Close connection to server 
     server.quit()
-    print(mail, key)
-    return 
+
+    return {"key": key}

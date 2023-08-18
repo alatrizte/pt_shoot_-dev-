@@ -31,6 +31,18 @@ def signup():
 
         consulta = Users.signup(name, email, password)
         if consulta['success'] == False:
-            return jsonify(message= consulta['message'])
+            return jsonify(message=consulta['message'], success=False)
         else:
-            return jsonify(message=consulta['message'])
+            return jsonify(message=consulta['message'], success=True)
+        
+@auth.route('/mail_confirm', methods=['POST'])
+def confirm():
+    if request.method == 'POST':
+        email = request.form['email']
+        key = request.form['key']
+
+        consulta = Users.mail_confirm(email, key)
+        if consulta['success'] == True:
+            return jsonify(message=consulta['message'], success=True)
+        else:
+            return jsonify(message=consulta['message'], success=False)

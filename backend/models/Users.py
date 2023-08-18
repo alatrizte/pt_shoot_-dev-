@@ -1,5 +1,4 @@
 from database import db
-import string, random
 from services.send_mail_key import send_
 
 class Users:
@@ -16,7 +15,7 @@ class Users:
             return {"message": conn[0], "success": True}
         else: 
             return {"message": "Ha de estar registrado para poder acceder.", "success": False}
-
+        
     @classmethod  
     def signup(cls, name, email, password):
         # Comprueba que el email sea único.
@@ -25,21 +24,46 @@ class Users:
 
         is_unique_mail = db.query(sql, val)
 
+        # Si el e-mail no es único devuelve error
         if len(is_unique_mail) > 0:
             return {"message": "El e-mail ya está registrado", "success": False}
-        else:
-            # Genera una key aleatoria para el nuevo usuario
-            # Esta llave se envia por mail para confirmar su registro.
-            key = ''
-            for x in range(8):
-                key += random.choice(string.ascii_letters + string.digits)
-
-            sql = f"INSERT INTO users (user_name, user_mail, user_pass, key_confirm) VALUES (%s, %s, %s, %s)"
-            val = (name, email, password, key)
-
+        else:  
+            # Inserta en la tabla 'users' los datos del usuario.      
+            sql = f"INSERT INTO users (user_name, user_mail, user_pass) VALUES (%s, %s, %s)"
+            val = (name, email, password)
             conn = db.insert(sql, val)
 
+            # Si la respuesta de la base de datos es correcta
+            # Enviamos un correo con una clave. Es la función send_ la encargada de generar la clave
+            # Si todo es correcto la función nos devuelve la clave que envió por correo.
+            # La clave la almacena en la base de datos en la tabla 'users'.
             if conn:
-                send_(email, key)
-            return {"message": "Consulte su e-mail para terminar el registro.", "success": True}
+                consulta = cls.send_key(email, name)
+                return consulta
+
+    @classmethod
+    def send_key(cls, email, name):
+        key_sended = send_(email, name)
+        sql = f"UPDATE users SET key_confirm=%s WHERE user_mail=%s"
+        val = (key_sended['key'], email)
+        conn = db.insert(sql, val)
+
+        return {"message": "Consulte su e-mail para terminar el registro.", "success": True}
+    
+    @classmethod
+    def mail_confirm(cls, mail, key):
+        sql = f"SELECT * FROM users WHERE user_mail=%s AND key_confirm=%s"
+        val = (mail, key)
+
+        confirm = db.query(sql, val)
+
+        if len(confirm) > 0:
+            sql = f"UPDATE users SET key_confirm='confirm!' WHERE user_mail=%s"
+            val = (mail,)
+            
+            conn = db.insert(sql, val)
+
+            return {"message": "Usuario registrado correctamente.", "success": True}
+        
+        return {"message": "El código o el e-mail no son correctos", "success": False}
         
