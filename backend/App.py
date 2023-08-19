@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 app.register_blueprint(login.auth)
 app.register_blueprint(upload.main, url_prefix='/upload')
-app.register_blueprint(projects.main, url_prefix='/new-project')
+app.register_blueprint(projects.prjt)
 
 if __name__ == "__main__":
     # Iniciamos la aplicación

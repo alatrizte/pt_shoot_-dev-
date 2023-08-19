@@ -3,10 +3,10 @@ from flask import Blueprint, request, jsonify
 from services.User_tokens import User_tokens
 from models.Projects import Projects
 
-main = Blueprint("new_project", __name__)
+prjt = Blueprint('prjt', __name__)
 
 
-@main.route("/", methods=["POST"])
+@prjt.route('/new-project', methods=["POST"])
 def new_project():
     if request.method == "POST":
         token_consult = User_tokens.verify_token(request.headers)
@@ -29,3 +29,13 @@ def new_project():
         else:
             response = jsonify(message="No autorizado")
             return response, 401
+
+@prjt.route('/list-project')
+def get_project():
+    token_consult = User_tokens.verify_token(request.headers)
+    if token_consult:
+        consulta = Projects.get_projects(token_consult)
+        return jsonify(consulta)
+    else:
+        response = jsonify(message="No autorizado")
+        return response, 401

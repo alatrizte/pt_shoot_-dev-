@@ -74,3 +74,15 @@ class Projects:
         crea_tablas = db.transactions(inserts)
         print (crea_tablas)
         return crea_tablas
+
+    @classmethod
+    def get_projects(cls, user):
+        sql = f"SELECT * FROM projects WHERE user_id=%s"
+        val = (user, )
+
+        consulta = db.query(sql, val)
+
+        if len(consulta) > 0:
+            return consulta
+        else:
+            return {"message": "Todavía este Usuario no tiene proyectos", "success": False}
