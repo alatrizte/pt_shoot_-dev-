@@ -86,3 +86,14 @@ class Projects:
             return consulta
         else:
             return {"message": "Todavía este Usuario no tiene proyectos", "success": False}
+        
+    @classmethod
+    def delete_project(cls, ci_project):
+        sql = f"SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE '{ci_project}_%'"
+
+        consulta = db.query(sql, '')
+
+        if len(consulta) > 0:
+            return consulta
+        else:
+            return {"message": "Todavía este Usuario no tiene proyectos", "success": False}
