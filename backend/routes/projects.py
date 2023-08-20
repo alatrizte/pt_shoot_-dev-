@@ -6,8 +6,8 @@ from models.Projects import Projects
 prjt = Blueprint('prjt', __name__)
 
 
-@prjt.route('/new-project', methods=["POST"])
-def new_project():
+@prjt.route('/new-project/<int:user_id>', methods=["POST"])
+def new_project(user_id):
     if request.method == "POST":
 
         # la consulta al token devuelve el id del usuario que crea el proyecto
@@ -17,8 +17,10 @@ def new_project():
             try:
                 # Guarda el la tabla 'projects' el nombre del proyecto con el propietario.
                 project_name = request.form["project_name"]
-                add_project = Projects.create_project (token_consult, project_name)
-
+                if token_consult == user_id:
+                    add_project = Projects.create_project (token_consult, project_name)
+                else:
+                    add_project = False
                 # Si el proyecto se guardó crea las tablas en la base de datos necesarias
                 # para el proyecto: _cast -> Reparto de personajes que pertenecen al proyeco.
                 #                   _seq_cast -> Reparto de personajes por secuencia.
