@@ -88,11 +88,18 @@ class Projects:
             return {"message": "Todavía este Usuario no tiene proyectos", "success": False}
         
     @classmethod
-    def delete_project(cls, ci_project):
+    def delete_project(cls, ci_project, user_id):
+        # Comprueba que el administrador de la tabla sea el que pueda borrarla.
+        sql = f"SELECT user_id FROM projects WHERE ci_project=%s"
+        val = (ci_project,)
+        admin = db.query(sql, val)
+        if user_id != admin:
+            return {"message": "No tiene permisos de administrador para eliminar el proyecto.", "success": False}
+        
         # Busca las tablas del proyecto en la base de datos
         sql = f"SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE '{ci_project}_%'"
         tablas = db.query(sql, '')
-
+        
         # Elimina las tablas de la base de datos.
         transaccion = []
         for tabla in tablas:

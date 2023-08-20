@@ -56,7 +56,7 @@ def get_project():
 def del_project(ci_project):
     token_consult = User_tokens.verify_token(request.headers)
     if token_consult and request.method == 'DELETE':
-        consulta = Projects.delete_project(ci_project)
+        consulta = Projects.delete_project(ci_project, token_consult)
         return jsonify(consulta)
     else:
         response = jsonify(message="No autorizado")
