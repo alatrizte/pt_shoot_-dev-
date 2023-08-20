@@ -3,10 +3,10 @@ from flask import Blueprint, request, jsonify
 from services.User_tokens import User_tokens
 from models.Projects import Projects
 
-prjt = Blueprint('prjt', __name__)
+projects = Blueprint('projects', __name__)
 
 
-@prjt.route('/new-project/<int:user_id>', methods=["POST"])
+@projects.route('/new-project/<int:user_id>', methods=["POST"])
 def new_project(user_id):
     if request.method == "POST":
 
@@ -42,17 +42,17 @@ def new_project(user_id):
             response = jsonify(message="No autorizado")
             return response, 401
 
-@prjt.route('/list-project')
-def get_project():
+@projects.route('/list-project/<int:user_id>')
+def get_project(user_id):
     token_consult = User_tokens.verify_token(request.headers)
-    if token_consult:
-        consulta = Projects.get_projects(token_consult)
+    if token_consult == user_id:
+        consulta = Projects.get_projects(user_id)
         return jsonify(consulta)
     else:
         response = jsonify(message="No autorizado")
         return response, 401
 
-@prjt.route('/delete/<string:ci_project>', methods=['DELETE'])
+@projects.route('/delete/<string:ci_project>', methods=['DELETE'])
 def del_project(ci_project):
     token_consult = User_tokens.verify_token(request.headers)
     if token_consult and request.method == 'DELETE':

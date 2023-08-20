@@ -67,3 +67,12 @@ class Files:
             pass
         
         return {"message": f"Datos introducidos correctamente en la tabla {ci_project}_seq_cast", "success": True}
+    
+    @classmethod
+    def get_sequences(cls, ci_project):
+        sql = f"SELECT * FROM {ci_project}_sequences"
+        try:
+            consulta = db.query(sql, '')
+            return consulta
+        except Exception as e:
+            return {"message": f"Error de consulta en la tabla {ci_project}_sequences: {e}", "success": False}
