@@ -89,11 +89,24 @@ class Projects:
         
     @classmethod
     def delete_project(cls, ci_project):
+        # Busca las tablas del proyecto en la base de datos
         sql = f"SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE '{ci_project}_%'"
+        tablas = db.query(sql, '')
 
-        consulta = db.query(sql, '')
+        # Elimina las tablas de la base de datos.
+        transaccion = []
+        for tabla in tablas:
+            sql = f"DROP TABLE {tabla[0]}"
+            transaccion.append((sql, ''))
+        elimina_tablas = db.transactions(transaccion)
+        print ("Tablas eliminadas")
 
-        if len(consulta) > 0:
-            return consulta
+        # Elimina el dato de la tabla 'projects'.
+        sql = f"DELETE FROM projects WHERE ci_project=%s"
+        val = (ci_project,)
+        elimina_dato = db.insert(sql, val)
+
+        if elimina_tablas and elimina_dato:
+            return {"message": f"El proyecto {ci_project} ha sido eliminado", "success": True}
         else:
-            return {"message": "Todavía este Usuario no tiene proyectos", "success": False}
+            return {"message": f"Error al eliminar el proyecto {ci_project}", "success": False}

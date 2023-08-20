@@ -56,3 +56,6 @@ def del_project(ci_project):
     if token_consult and request.method == 'DELETE':
         consulta = Projects.delete_project(ci_project)
         return jsonify(consulta)
+    else:
+        response = jsonify(message="No autorizado")
+        return response, 401
