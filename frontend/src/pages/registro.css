@@ -1,0 +1,10 @@
+.enlace {
+    color: #1b3c63;
+    text-decoration: underline #1b3c63;
+}
+
+.enlace:hover {
+    cursor: pointer;
+    color: blueviolet;
+    text-decoration: underline blueviolet;
+}

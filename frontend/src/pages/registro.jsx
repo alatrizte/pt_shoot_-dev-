@@ -1,6 +1,7 @@
 import { Login } from "../components/registro/login"
 import { Signin } from "../components/registro/signin"
 import { useState } from "react"
+import './registro.css'
 
 export function Registro() {
     const [isActive, setIsActive] = useState(true)

@@ -10,7 +10,9 @@ auth = Blueprint('auth', __name__)
 def login():
     if request.method == 'POST':
         email = request.form['email']
-        password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
+        #password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
+        
+        password = request.form['password']
 
         consulta = Users.login(email, password)
         if consulta['success'] == False:
