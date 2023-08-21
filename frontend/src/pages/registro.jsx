@@ -1,12 +1,16 @@
 import { Login } from "../components/registro/login"
+import { Signin } from "../components/registro/signin"
+import { useState } from "react"
+
 export function Registro() {
+    const [isActive, setIsActive] = useState(true)
+    const toggleActive = () => {
+        setIsActive(!isActive)
+    }
     return(
         <>
-            <h3>Acceso de usuario</h3>
-            <div>Introduce tus datos para acceder</div>
-            <div>
-                <Login></Login>
-            </div>
+            <Login visibilidad={ isActive } toggle={toggleActive}></Login>
+            <Signin visibilidad={ !isActive } toggle={toggleActive}></Signin>
         </>
     )
 }
