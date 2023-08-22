@@ -1,20 +1,25 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { sha3_256 } from 'js-sha3'
 
 export function Login ({ visibilidad, toggle }) {
 
     const [alert, setAlert] = useState ('')
 
+    // Envio de los datos de registro al servidor y esperamos respuesta.
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        // Hasea la contraseña con el algoritmo 'sha3-256'.
         let password = document.getElementById("password");
         const hashedPassword = sha3_256(password.value);
 
         let email = document.getElementById("email");
 
+        // Comprueba que los campos no estén vacios.
         if (password.value == "" || email.value == "") {
             setAlert ("Todos los campos son obligatorios")
         } else {
+            // Envia los datos del formulario.
             const df = new FormData();
             df.append('password', hashedPassword)
             df.append('email', email.value)
@@ -24,10 +29,14 @@ export function Login ({ visibilidad, toggle }) {
             })
             .then(respuesta => respuesta.json())
             .then(data => {
+                // En caso de error
                 if (data['success'] == false) {
-                    password.value = '';
-                    setAlert(data['message'])
+                    password.value = ''; // borra el campo de password para evitar el mismo envío.
+                    setAlert(data['message']) // Imprime el mesaje de respuesta del servidor.
                 } else {
+                    // Caso de respuesta de éxito.
+                    // Almacena en la sesion la clave de token. 
+                    sessionStorage.setItem('token', data['token'])
                     console.log(data);
                     password.value = '';
                     email.value = '';

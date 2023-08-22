@@ -11,7 +11,7 @@ def login():
     if request.method == 'POST':
         email = request.form['email']
         #password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
-        
+
         password = request.form['password']
 
         consulta = Users.login(email, password)
@@ -27,10 +27,14 @@ def login():
 @auth.route('/signup', methods=['POST'])
 def signup():
     if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
-
+        name = request.form['user_name']
+        email = request.form['user_mail']
+        
+        # Comprueba el servidor que el password y la confirmación sean iguales.
+        # En caso afirmativo hashea la contraseña con 'sha3-256'
+        if request.form['password'] == request.form['pass_confirm']:
+            password = hashlib.sha3_256((request.form['password'].encode('utf-8'))).hexdigest()
+        
         consulta = Users.signup(name, email, password)
         if consulta['success'] == False:
             return jsonify(message=consulta['message'], success=False)
