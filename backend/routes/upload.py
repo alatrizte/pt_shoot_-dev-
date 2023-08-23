@@ -38,6 +38,8 @@ def uploader():
             fileHTML = "backend/uploads/" + ciProject + "/" + nombre_archivo + ".html"
             
             # Convierte el archivo .doc en un .html
+            # La conversión se realiza con LibreOffice (en este caso LibreOffice 7.3.7.2 30-Build:2) 
+            # Para más información escribir en una terminal 'soffice --help'
             os.system (f"soffice --headless --convert-to 'html:XHTML Writer File:UTF8' {file_doc} --outdir {UPLOAD_FOLDER}")
 
             # Espera a que el archivo .html esté creado
