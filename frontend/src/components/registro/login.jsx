@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { sha3_256 } from 'js-sha3'
+import { Key } from "./key"
 
 export function Login ({ visibilidad, toggle }) {
 
     const [alert, setAlert] = useState ('')
+    const [keyConfirm, setKeyConfirm] = useState(false)
 
     // Envio de los datos de registro al servidor y esperamos respuesta.
     const handleSubmit = (e) => {
@@ -31,8 +33,12 @@ export function Login ({ visibilidad, toggle }) {
             .then(data => {
                 // En caso de error
                 if (data['success'] == false) {
-                    password.value = ''; // borra el campo de password para evitar el mismo envío.
-                    setAlert(data['message']) // Imprime el mesaje de respuesta del servidor.
+                    if (data['message'] == "Sin clave de confirmación"){
+                        setKeyConfirm(true)
+                    } else {
+                        password.value = ''; // borra el campo de password para evitar el mismo envío.
+                        setAlert(data['message']) // Imprime el mesaje de respuesta del servidor.
+                    }
                 } else {
                     // Caso de respuesta de éxito.
                     // Almacena en la sesion la clave de token. 
@@ -51,6 +57,7 @@ export function Login ({ visibilidad, toggle }) {
     }
 
     return (
+        <>
         <div style={{ display: visibilidad ? 'block' : 'none' }}>
             <h3>Acceso de usuario</h3>
             <div>Introduce tus datos para acceder</div>
@@ -62,5 +69,7 @@ export function Login ({ visibilidad, toggle }) {
             <p className="enlace" onClick={ handleClick }>Regístrate aquí si aún no tienes cuenta.</p>
             <p className="alert">{ alert }</p>
         </div>
+        <Key visibilidad={ keyConfirm }></Key>
+        </>
     )
 }

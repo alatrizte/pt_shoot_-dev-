@@ -6,13 +6,18 @@ class Users:
     @classmethod
     def login(cls, email, password):
 
-        print(email, password)
-        sql = "SELECT * FROM users WHERE user_mail=%s AND user_pass=%s AND key_confirm=%s"
-        values=(email, password, 'confirm!')
+        sql = "SELECT * FROM users WHERE user_mail=%s AND user_pass=%s"
+        values=(email, password)
         conn = db.query(sql, values)
 
         if len(conn) > 0:
-            return {"message": conn[0], "success": True}
+            sql = "SELECT * FROM users WHERE user_mail=%s AND key_confirm=%s"
+            val = (email, 'confirm!')
+            consulta = db.query(sql, val)
+            if len(consulta) > 0:
+                return {"message": conn[0], "success": True}
+            else:
+                return {"message": "Sin clave de confirmación", "success": False}
         else: 
             return {"message": "Ha de estar registrado para poder acceder.", "success": False}
         

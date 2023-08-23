@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function Key ({ visibilidad, toggle }) {
+export function Key ({visibilidad}) {
 
     const [alert, setAlert] = useState ('')
 
