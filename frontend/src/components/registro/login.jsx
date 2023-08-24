@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { sha3_256 } from 'js-sha3'
-import { Key } from "./key"
 
 export function Login ({ visibilidad, toggle }) {
 
@@ -33,7 +32,7 @@ export function Login ({ visibilidad, toggle }) {
             .then(data => {
                 // En caso de error
                 if (data['success'] == false) {
-                    if (data['message'] == "Sin clave de confirmación"){
+                    if (data['message'] == "clave"){
                         setKeyConfirm(true)
                     } else {
                         password.value = ''; // borra el campo de password para evitar el mismo envío.
@@ -43,6 +42,7 @@ export function Login ({ visibilidad, toggle }) {
                     // Caso de respuesta de éxito.
                     // Almacena en la sesion la clave de token. 
                     sessionStorage.setItem('token', data['token'])
+                    sessionStorage.setItem('user_id', data['user_id'])
                     console.log(data);
                     password.value = '';
                     email.value = '';
@@ -50,6 +50,23 @@ export function Login ({ visibilidad, toggle }) {
                 }
             })
         }
+    }
+
+    // Consulta al servidor si el e-mail está confirmado.
+    const handleSubmitKey = (e) => {
+        e.preventDefault()
+        const submitForm = new FormData(document.getElementById("key_form"))
+        submitForm.append('email', email.value)
+        fetch('http://localhost:5000/mail_confirm', {
+            method: 'POST',
+            body: submitForm
+        })
+        .then ( respuesta => respuesta.json())
+        .then ( data => {
+            if (data['success'] == true) {
+                handleSubmit(e)
+            }
+        })
     }
 
     const handleClick = () => {
@@ -69,7 +86,15 @@ export function Login ({ visibilidad, toggle }) {
             <p className="enlace" onClick={ handleClick }>Regístrate aquí si aún no tienes cuenta.</p>
             <p className="alert">{ alert }</p>
         </div>
-        <Key visibilidad={ keyConfirm }></Key>
+        <div style={{ display: keyConfirm ? 'block' : 'none' }}>
+            <h3>Clave de registro de usuario</h3>
+            <div>Introduce tu clave para confirmar tu registro.</div>
+            <form id="key_form" onSubmit={ handleSubmitKey }>
+                <div>clave de registro<br/><input type="text" name="key" id="key"/></div>
+                <button type="submit">Enviar</button>
+            </form>
+            <p className="alert">{ alert }</p>
+        </div> 
         </>
     )
 }

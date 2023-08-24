@@ -21,7 +21,8 @@ def login():
             encoded_token = User_tokens.generate_token(consulta['message'])
             return jsonify( message='success',
                             success=True,
-                            token=encoded_token
+                            token=encoded_token, 
+                            user_id=consulta['message'][0]
                             )
         
 @auth.route('/signup', methods=['POST'])

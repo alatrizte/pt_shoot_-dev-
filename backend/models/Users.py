@@ -15,9 +15,10 @@ class Users:
             val = (email, 'confirm!')
             consulta = db.query(sql, val)
             if len(consulta) > 0:
+                # el objeto conn[0] es (user_id, user_name, user_mail, user_password_hasheado, key_confirm)
                 return {"message": conn[0], "success": True}
             else:
-                return {"message": "Sin clave de confirmación", "success": False}
+                return {"message": "clave", "success": False}
         else: 
             return {"message": "Ha de estar registrado para poder acceder.", "success": False}
         
