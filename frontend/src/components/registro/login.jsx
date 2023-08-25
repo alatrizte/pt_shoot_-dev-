@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { sha3_256 } from 'js-sha3'
 
-export function Login ({ visibilidad, toggle }) {
+export function Login ({ visibilidad, toggle, auth }) {
 
     const [alert, setAlert] = useState ('')
     const [keyConfirm, setKeyConfirm] = useState(false)
@@ -43,10 +43,10 @@ export function Login ({ visibilidad, toggle }) {
                     // Almacena en la sesion la clave de token. 
                     sessionStorage.setItem('token', data['token'])
                     sessionStorage.setItem('user_id', data['user_id'])
-                    console.log(data);
                     password.value = '';
                     email.value = '';
-                    setAlert('')
+                    setAlert('');
+                    auth(true)
                 }
             })
         }

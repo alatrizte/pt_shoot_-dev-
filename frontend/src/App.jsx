@@ -7,6 +7,8 @@ function App() {
   const token = sessionStorage.getItem('token')
   
   const [isTokened, setIsTokened] = useState(token)
+
+  const [proyectos, setProyectos] = useState([])
  
   let user_id = sessionStorage.getItem('user_id')
   if (user_id !== null) {
@@ -22,6 +24,9 @@ function App() {
         .then(data => {
           if (data['message'] == "No autorizado"){
             setIsTokened(false)
+          } else {
+            //console.log(data);
+            setProyectos(data)
           }
         })
         .catch(e => console.error(e))
@@ -30,7 +35,7 @@ function App() {
 
   return (
     <>
-      { isTokened ? <AdminPanel /> : <Registro />}
+      { isTokened ? <AdminPanel auth={setIsTokened} proyectos={proyectos}/> : <Registro auth={setIsTokened}/>}
     </>
   )
 }

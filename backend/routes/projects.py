@@ -42,9 +42,8 @@ def new_project(user_id):
             response = jsonify(message="No autorizado")
             return response, 401
 
-@projects.route('/list-project/')
 @projects.route('/list-project/<int:user_id>')
-def get_project(user_id=0):
+def get_project(user_id):
     token_consult = User_tokens.verify_token(request.headers)
     if token_consult == user_id:
         consulta = Projects.get_projects(user_id)
